@@ -21,9 +21,13 @@ Instructor contact:
 email: bennett.billy@nyu.edu  
 drop-in hours: Mon // Fri, 10 - 11am  
 [make an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UU83Y25Jd3FfQnhjfGRlZmF1bHR8MTcyMDRkOTExMjgzY2QxOTVhYmFhZjM4MmRiMzg1MmM)  // [join by zoom]('https://nyu.zoom.us/my/billythemusical') 
+GA contact:
 
-**GA contact:**  
->Lucia Gomez (GA)  
+> Lucia Gomez (GA)  
+> email: ilg246@nyu.edu  
+> drop-in hours: Mon 5 - 6pm, Thr 1 - 2pm  
+> [make an appointment](https://calendar.app.google/d4t3TPxmR5xUcJ7Z6) // [join by zoom](https://nyu.zoom.us/my/lucia.go)  
+> or let me know if you'd like to meet in person at 370 Jay St
 
   
 ---
