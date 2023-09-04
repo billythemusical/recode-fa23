@@ -10,17 +10,16 @@ Fall, 2023
 
 Class time & location:
 
->Tue / Thu, 10:40am - 12:20pm  
-370 Jay St (Brooklyn Campus), 4th floor, Room 410
+> Tue / Thu, 10:40am - 12:20pm  
+> 370 Jay St (Brooklyn Campus), 4th floor, Room 410
 
 Instructor contact:
 
- 
+> Billy Bennett  
+> email: bennett.billy@nyu.edu  
+> drop-in hours: Mon // Fri, 10 - 11am  
+> [make an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UU83Y25Jd3FfQnhjfGRlZmF1bHR8MTcyMDRkOTExMjgzY2QxOTVhYmFhZjM4MmRiMzg1MmM)  // [join by zoom]('https://nyu.zoom.us/my/billythemusical')  
 
->Billy Bennett  
-email: bennett.billy@nyu.edu  
-drop-in hours: Mon // Fri, 10 - 11am  
-[make an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UU83Y25Jd3FfQnhjfGRlZmF1bHR8MTcyMDRkOTExMjgzY2QxOTVhYmFhZjM4MmRiMzg1MmM)  // [join by zoom]('https://nyu.zoom.us/my/billythemusical') 
 GA contact:
 
 > Lucia Gomez (GA)  
