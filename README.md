@@ -1,7 +1,7 @@
 # recode-fa23
- Welcome to course website!
+ Welcome to course [website](https://billythemusical.github.io/recode-fa23/)!
 
-- Find the course materials in the [course repo](https://billythemusical.github.io/recode-fa23/)
+- Find the course materials in the [course repo](./)
 - Make sure to read and reference the [syllabus](./syllabus.md)  
 - Follow the [course outline](./course-outline.md) for updates
 - And check our [class dates](./syllabus.md#class-dates)  
