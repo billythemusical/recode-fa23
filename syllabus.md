@@ -110,6 +110,11 @@ You are allowed up to **three (3) unexcused absences** throughout the semester, 
 
 In regards to tardiness, please notify me immediately if you will have issues getting to 370 Jay St. on time. If you are more than 15 minutes late, you will be counted absent for the day.
 
+# <h> ITP/IMA Code of Conduct </h>
+
+Let's take a minute to discuss the [ITP/IMA Code of Conduct](https://itpnyu.github.io/ITP-IMA-Code-of-Conduct/community_statement). This important information will inform much of how we conduct ourselves in the classroom in how we approach our work and one another as well as the context in which we find ourselves.
+
+---
 **STATEMENT OF ACADEMIC INTEGRITY**  
 
 Plagiarism is presenting someone else’s work as though it were your own. More specifically, plagiarism is to present as your own: A sequence of words quoted without quotation marks from another writer or a paraphrased passage from another writer’s work or facts, ideas or images composed by someone else.  More information can be found on Tisch’s page regarding Academic Integrity (http://tisch.nyu.edu/faculty/academic-integ).
@@ -125,7 +130,6 @@ Your health and safety are a priority at NYU.  If you experience any health or m
 **TITLE IX**
 
 Tisch School of the Arts to dedicated to providing its students with a learning environment that is rigorous, respectful, supportive and nurturing so that they can engage in the free exchange of ideas and commit themselves fully to the study of their discipline. To that end Tisch is committed to enforcing University policies prohibiting all forms of sexual misconduct as well as discrimination on the basis of sex and gender.
-
 
 # <h>Resources</h>  
 
