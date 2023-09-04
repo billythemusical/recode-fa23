@@ -4,15 +4,15 @@
 Fall 2023
 
 [Module 1]() - Foundations (HTML / CSS)  
-[Module 2]() - Vanilla & Async Javascript  
+[Module 2]() - Vanilla & Asynchronous Javascript  
 [Module 3]() - Working with External Libraries*  
-[Module 4]() - Developing Locally  
-[Module 5]() - Working with Graphics & Pixels*  
-[Module 6]() - Making Experiences with Progressive Web Apps*  
-[Module 7]() - Coding with Generative AI  
+[Module 4]() - Working with Graphics & Pixels*  
+[Module 5]() - Coding with Generative AI  
+[Module 6]() - Developing Locally  
+[Module 7]() - Using Git and Github  
 [Module 8]() - Working outside the browser*  
-[Module 9]() - Electron Apps  
-[Module 10]() - Simple Web Servers*
+[Module 9]() - Making Experiences with Progressive Web Apps*  
+[Module 10]() - Simple Web Servers*  
 
 > Note: <b>*</b> indicates a module that last two weeks.
 
