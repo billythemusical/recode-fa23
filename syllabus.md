@@ -70,11 +70,11 @@ Link to the [course outline](./course-outline.md).
 
 **Assignments - 60%**
 
-- One assignment will be given for the 7 modules and each worth 10% of your grade.
+- Usually, there will be one assignment at the end of each learning module, of which there will be 10. The lowest one will be dropped at the end.
 
 **Reading & Writing - 20%**  
 
-- Reading will occasionally be assigned with a written blog post response. Collectively, these are worth 10% of your grade.
+- Reading will be regularly assigned with a written response in the form of a blog post. Collectively, these are worth 20% of your grade.  Either you did it, you did it well (bonus points perhaps), or you didn't do it at all.
 
 **Class Participation - 20%**  
 
