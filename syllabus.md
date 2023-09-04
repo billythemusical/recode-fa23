@@ -80,28 +80,17 @@ Link to the [course outline](./course-outline.md).
 
 - Class participation includes taking part in class discussion and exercises, asking questions, and communicating reliably with the professor.  
 
-# <h> Attendance Policy </h>  
-
-I will take attendance throughout the semester on a regular basis. The university also has clear policies on what to do in the case of illness or excused absences. Please refer to their policies as outlined below. 
-
-You are allowed up to **three (3) unexcused absences** throughout the semester, but you are responsible for making up any course work or assignments that you miss. You may use drop-in hours for this purpose. For each unexcused absence beyond three, you will begin to drop a letter grade per absence, so please communicate with me before this takes place.
-
-In regards to tardiness, please notify me immediately if you will have issues getting to 370 Jay St. on time. If you are more than 15 minutes late, you will be counted absent for the day.
-
-
-# <h>Assignments</h>
+# <h>Grading Methodology</h>  
 
 Assignments are a chance for you to demonstrate you understanding of the material and for you to have a creative outlet for your work that you would want to be a part of your creative portfolio. You will be graded on how well you satisfy the constraints of the assignment with special attention given to creativity and the attention to detail. And please note the role that documentation plays here. Exceptional output should be accompanied with exceptional documentation and conceptual explanation.
 
-This is in line with a labor-based grading system, where the emphasis is not simply placed solely on the "right answer," but how much effort the student has put into making progress. This includes documenting any errors occurred along the way and taking care for those in the community at large who may benefit from these efforts. 
+This is in line with the idea of a labor-based grading system, where the emphasis is not simply placed solely on the "right answer," but how much effort the student has put into making progress. This includes documenting one's process, including any errors encountered along the way, which benefits those in the class as well as the community at large.
 
-I try to grade you based on the effort you put for in completing the assignments, even if you are struggling with "getting it to work." I want to see that you are taking advantage of the resources available to you, are making good use of your time and are communicative where you are finding difficulty. I don't think any student's grade should suffer because they are not getting the help they need!
+So even if you are struggling with "getting it to work," I want to see that you are taking advantage of the resources available to you, are making good use of your time and are communicative where you are finding difficulty. I don't think any student's grade should suffer because they are not getting the help they need!
 
-- In addition to any assigned reading response posts, you are responsible for **10 module assignments**. These are typically given at the end of each module and due the next week.
+# <h>Assignments</h>
 
-- Assignments and are meant to take anywhere from 2 - 6 hours to complete and as such will usually be assigned over a weekend.  Not only will you be presenting your code, but also your process through documentation - what inspired you, what resources you used, what mistakes you made along the way, any solutions that you found, etc.
-
-> Turn in your assignments on [this Google form](https://forms.gle/HDGNGaoMaxBRPr2e9). 
+> Turn in your assignments on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16). 
 
 Specific requirements for assignments:
 
@@ -112,6 +101,14 @@ Specific requirements for assignments:
 - Assignments must be turned in *before class* on the day they're due. Late assignments will not be accepted.  
 
 - Assignments will be graded on their technical mastery and creativity. Occasionally, and as time permits, we'll be critiquing student work in-class, generally in an informal way and on a volunteer basis.
+
+# <h> Attendance Policy </h>  
+
+I will take attendance throughout the semester on a regular basis. The university also has clear policies on what to do in the case of illness or excused absences. Please refer to their policies as outlined below. 
+
+You are allowed up to **three (3) unexcused absences** throughout the semester, but you are responsible for making up any course work or assignments that you miss. You may use drop-in hours for this purpose. For each unexcused absence beyond three, you will begin to drop a letter grade per absence, so please communicate with me before this takes place.
+
+In regards to tardiness, please notify me immediately if you will have issues getting to 370 Jay St. on time. If you are more than 15 minutes late, you will be counted absent for the day.
 
 **STATEMENT OF ACADEMIC INTEGRITY**  
 
