@@ -2,23 +2,42 @@
 <html>
 
 <head>
-    <title>🤓 Professor Billy 🤓</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤓Professor Billy🤓</title>
     <style>
-        body {
+        body { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
             font-family: 'VT323', monospace;
+        }
+
+        #laptop {
+            background-color: aqua; 
+            width: min-content;
+            padding-right: 30px;
+        }
+
+        p {
+            text-align: center;
+            max-width: 600px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Billy Bennett</h1>
-    <p>The guy loves a good laptop!</p>
-    <div style="
-        background-color: aqua; 
-        width: min-content;
-        padding-right: 30px;
-        ">
-        <img src="./laptop-1.gif" />
+    <div class="container">
+        <h1>Billy Bennett</h1>
+        <p>The guy loves a good laptop!</p>
+        <!-- <br> -->
+        <div id="laptop">
+            <img src="./laptop-1.gif" />
+        </div>  
     </div>
     
 </body>
