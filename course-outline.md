@@ -84,11 +84,12 @@ CSS stands for Cascading Style Sheets.
 - selectors
     - [W3 CSS selector guide](https://www.w3schools.com/cssref/trysel.php)
 - properties
-- how to apply 
+- how to apply
     - inline // `<p style="color: green;">Here's some green text!</p>`
     - internal // `<style> <!-- CSS block goes here --> </style>`
     - external // `<link rel="stylesheet" href="style.css">`
 - The Box Model
+    - link to [Box Model playground](https://codepen.io/gabaza/pen/wEoLQY)
 
 ![An image of the CSS Box Model as seen in the Chrome browser's inspector window - a number of concentric rectangles of varying colors, labeled from the outside moving inwards: margin, border, padding, content.](./images/chrome-box-model.png)
 
