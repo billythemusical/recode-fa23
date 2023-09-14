@@ -33,7 +33,7 @@ Welcome, everyone, to the class! Let's first introduce ourselves and talk about 
 
 ## Module 1 - Foundations (HTML / CSS)
 
-[CLASS NOTES](./modules/01-foundations-html-css/html-css) have moved!
+[CLASS NOTES](./modules/01-foundations-html-css/html-css.md) have moved!
 
 Discussion topics:
 - What is the internet? 
