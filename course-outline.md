@@ -111,6 +111,8 @@ Hand-code your own HTML web page and publish it Neocities. Here are some types o
 
 Feel free to experiment and try some different things out. I'd like to see that you took the time to explore. Also, take a look at some of the student work from the Emma Rae Norton's [hand-coding-round-robin](https://doodybrains.github.io/hand-coding-round-robin/archive/) archive and see what kinds of things might be fun to try like, for example, the `<marquee>` tag, playing with `transform`, or getting completely wacky with `animation: rotate 1s alternate infinite;` 😅...
 
+Here's a handy [HTML / CSS Cheat Sheet](https://docs.google.com/document/d/1yCs8SHUIhQGyLQt43A1Z5HUFX_ZTUm2rLhAkWBOILbw/edit?usp=sharing).
+
 ⏱ *Approx. time to complete: 3 hours*  
 ⏩ Submit the Neocities link to your assignment on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).
 
