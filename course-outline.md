@@ -31,85 +31,28 @@ Welcome, everyone, to the class! Let's first introduce ourselves and talk about 
 
 ✅ *Total time: 45 minutes* 
 
-## Module 1 - Foundations (HTML / CSS) 
+## Module 1 - Foundations (HTML / CSS)
 
-> HTML is the body; CSS is the clothing!
+[CLASS NOTES](./modules/01-foundations-html-css/html-css) have moved!
 
 Discussion topics:
 - What is the internet? 
 - How did the internet begin? [[1](https://www.britannica.com/topic/ARPANET)],[[2](https://en.wikipedia.org/wiki/ARPANET)]  
 
-### HTML
+## HTML
 
-HTML stands for HyperText Markup Language. It's a text-based language that every web page is built with that the browser uses to render the visual elements on the screen, like text, images, and video. There are default rules and behaviors for laying out these elements and there are an infinite ways to customize the format. The rules for the default layout are based on the **Box Model**, which we will discuss in greater detail once have written some code ourselves and start to play with it.
+HTML stands for Hyper Text Markup Langauge and it is composed of:
 
-The `<tag>` is primary building block of HTML. Tags typically have two parts - an opening and a closing tag. In the case of a `<div>` tag, it would look like this:
-```html
-<div> some content here </div>
-```
-Notice the addition of a forward slash `/` to close the tag, i.e. `</div>`. It's important to always mind your closing tags as HTML elements are nested within other elements. Most text editors will help you close your tags automatically with auto-complete. 
-
-
-
-Here are some other examples of HTML `tags`:
-- `<!DOCTYPE>` - declares the document type, arcane, necessary? 
-- `<head>` - used for metadata about the page, SEO, including other files, style sheets, etc.
-- `<body>` - where the bulk of the page's actual 'content' will go
-- `<footer>` - occasionally included but not necessary
-- `<div>` - a generic divider or unit in the layout
-- `<h1>, <h2>, ...<h6>` - text headings of various sizes   
-- `<p>` - paragraph, has default properties pertaining to text
-- `<a>` - hyperlink, how to define a link, i.e. [google.com](https://google.com)
-- `<img>` - images, these include a `src` attribute for file path
-- `<video>` - these also include a `src` attribute for file path
-- `<audio>` - these include a `src` attribute for file path
-- `<input>` - a flexible element, could be a text input, button, or other...
-- `<button>` - the text/label for the button goes in between the opening and closing tags
-- `<span>` - a swiss army knife for working with text
-- `<li>` - lists, there are also unordered lists, tables, etc.
-- `<canvas>` - remember me from p5??   
-...
-
->Here is a [comprehensive alphabetical list of HTML tags](https://www.w3schools.com/TAGS/default.asp) from W3 Schools.
-
-### CSS
-
-CSS is used to style the HTML elements. This gives us control over every conceivable visual aspect including color, size, and spacing, but also how the elements animate into view, like fading in or out or sliding on or off of the screen. 
-
->There have been [many advancements](https://animista.net/) in recent years with CSS animations if you wanna go deep!
-
-CSS code itself has its own special syntax and can be written from within an HTML document, or included in its own file, typically a `style.css` document. To write CSS in an HTML doc, we enclose the code inside of a special `<style>` tag, like so:
-
-```HTML
-<style> 
-    CSS goes here 
-</style>
-```
-In order to apply the CSS to certain elements, we use `selectors`. They can target  HTML elements as a whole, like all of the `<div>` elements in a document, like so:
-```HTML
-<style>
-    div {
-        color: red;
-        font-size: 24px;
-    }
-</style>
-```
-Now, any text within a `<div>` element that occurs after this code will be red and be 24 pixels in height. 
->I am careful to say *after this code* because, as we know, code is executed from top to bottom. For this reason, the CSS is usually included in the `<head>` so that all of the page shares the same style.
-
-Alternatively, we can target user-defined set of elements that we designate in our HTML. If we want to color the titles of sections in an article we are writing, we can assign those titles a `class`
-To help you keep track and target certain of your elements, the `class` attribute is often added, as below. These will come into play more as we use CSS.
-```html
-<div class="outer element">
-    <p class="inner element">
-        An example of a nested paragraph element.
-    </p>
-</div>
-```
+- Tags
+- Attributes
+- CSS selectors
 
 In-class exercise:
-1) Using the HTML boilerplate page as a starting point, quickly work up an About Me page. The page should include:
-    - Title (your name perhaps or a pithy quip about yourself - *Gen Z introvert on the verge of complete public meltdown*🍦🤸🏼‍♂️✌️)
+
+1) Download a text editor like [VS Code](https://code.visualstudio.com/).
+
+2) Using the [HTML boilerplate page](./modules/01-foundations-html-css/html-boilerplate.html) as a starting point, quickly work up an About Me page. The page should include:
+    - Your name (your name perhaps or a pithy quip about yourself - *Gen Z introvert on the verge of complete public meltdown*🍦🤸🏼‍♂️✌️)
     - Hometown(s)
     - Educational background
     - A short story about what you did this summer, or perhaps a trip you recently took
@@ -118,35 +61,58 @@ In-class exercise:
     - Interests
     - Pictures  
     - Videos 
-2) Do not worry about making the page "look good". We are just making a list right now. We will use CSS to change the style later.
- 
+3) Do not worry about making the page "look good". We are just making a list right now. We will use CSS to change the style later.
 
-📕 **Reading - due before class on Tue Sep 12th:** 
+📕 **Reading - due before class on ~~Tue Sep 12th~~ Thu Sep 14th:**
 
-Read Emma Rae Rorton's [hand coding round robin](https://doodybrains.github.io/hand-coding-round-robin/) workshop guide for inspiration. We will run a shortened version of this workshop in class on Tuesday, so please prepare as indicated in the workshop guide, i.e. have a code editor installed, be ready for others to work on your computer, etc. Also, please read the 'not required' reading. 🙃 
 
-Also, you can take a look at the HTML code for this workshop, which is a Github pages site. The link to the repo is derived from the code repository name `hand-coding-round-robin` and the username `doodybrains`, i.e. https://github.com/doodybrains/hand-coding-round-robin. From there, you can choose, "view code" and navigate down to the [index.html](https://github.com/doodybrains/hand-coding-round-robin/blob/master/index.html) file. From here, you can see how the page is laid out and all the CSS styling. It's ok if there are things you don't understand. Try to Google them, reference the W3 Schools site, or just don't get hung up and skip them for now.
+Read Emma Rae Norton's [hand coding round robin](https://doodybrains.github.io/hand-coding-round-robin/) workshop guide for inspiration. There is also some interesting 'not required' reading. The HTML code for the workshop page can be found [here](https://github.com/doodybrains/hand-coding-round-robin/blob/master/index.html). 
+
+>It's ok if there are things you don't understand on the page. Try to Google them, reference the W3 Schools site, or just make a note of your questions and book a drop-in appointment or pop up a hand in class! 
+
+The code is written in such a way as to be more easily understood and read by humans. There is a intentional connection left bare between the code and the output, as if the author is letting you into the art studio to watch them paint - quite a different feeling from when you inspect the source of any modern-day sites which obscure much of the code, often by design.
 
 Lastly, if you're not familiar with [School For Poetic Computation](https://sfpc.io/) (SFPC), check them out! They regularly do shows of student work which are always inspiring and thought-provoking. Lots of ITP/IMA alums are involved there as well.
 
 ⏱ *Approx. time to complete: 45 minutes to 1 hour* 
 
 
-## The CSS Box Model
+## CSS
 
-Assignment 1 
+CSS stands for Cascading Style Sheets.
 
-We will create a Github account, if you don't already have one already. From here, we will create a repo for the class where you will be posting your work. This will be for Module 1, so make a folder called `01-foundations` and call this file `about-me.html`. 
+- selectors
+    - [W3 CSS selector guide](https://www.w3schools.com/cssref/trysel.php)
+- properties
+- how to apply 
+    - inline // `<p style="color: green;">Here's some green text!</p>`
+    - internal // `<style> <!-- CSS block goes here --> </style>`
+    - external // `<link rel="stylesheet" href="style.css">`
+- The Box Model
+
+![An image of the CSS Box Model as seen in the Chrome browser's inspector window - a number of concentric rectangles of varying colors, labeled from the outside moving inwards: margin, border, padding, content.](./images/chrome-box-model.png)
+
+✔️ In-Class Exercise
+
+1. Go to [Neocities.org](https://neocities.org) and create an account.
+2. Using the interface, create a new folder called "01-foundations" and navigate to it. This is where you will upload Assignment 1.
+3. Upload your `about-me.html` page inside of this folder or whatever you have called your file. You can also experiment uploading other pages and file types as well.
+>This is how you will turn in your assignment link so get familiar with how to navigate these pages. Later, we will move to using Github Desktop and Github Pages.
 
 
-Do a 'Final' version of your About Me page. Upload your index.html file to Finish your About Me page. 
+📌 **Assignment 1 📌 - due before class on Tue Sep 19th:** 
 
-📌 **Assignment 1 📌 - due before next class on Thurs DATE:** 
+Hand-code your own HTML web page and publish it Neocities. Here are some types of pages that you could choose for inspiration:
+- an 'About Me' page, something people could read to get to know your personal history, interests, background, musical tastes, hobbies, etc. 
+- a portfolio page which shares a bio and links to your artistic projects or professional portfolio
+- a zine or other writing or illustration project
+- a recipe page for making your favorite dish or perhaps a family recipe or tradition
+- a wiki page about a topic that you find particularly interesting
 
-Hand-code your own About Me page using the HTML tags and CSS stylings that we learned about in class today. You can include any information you would like, but there should be at least 5 minutes worth of reading material on the page, including some artwork or creative output that you have created while in school. etc etc. Try to explore styling choices that we did not go over in class, the more obscure the better. We will remix these in class later in the week, so don't stress too much if it's perfect or not. This is an exercise for you to get your hands dirty. Try to insert a number of gifs and animations, short videos, images, etc into the page.
+Feel free to experiment and try some different things out. I'd like to see that you took the time to explore. Also, take a look at some of the student work from the Emma Rae Norton's [hand-coding-round-robin](https://doodybrains.github.io/hand-coding-round-robin/archive/) archive and see what kinds of things might be fun to try like, for example, the `<marquee>` tag, playing with `transform`, or getting completely wacky with `animation: rotate 1s alternate infinite;` 😅...
 
-⏱ *Approx. time to complete: 3 hours* 
-Submit your assignment on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).
+⏱ *Approx. time to complete: 3 hours*  
+⏩ Submit the Neocities link to your assignment on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).
 
 ## Module 2 - 🍦 Vanilla & Asynchronous Javascript  
 
