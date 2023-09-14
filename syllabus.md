@@ -18,7 +18,7 @@ Instructor contact:
 > Billy Bennett  
 > email: bennett.billy@nyu.edu  
 > drop-in hours: Mon // Fri, 10 - 11am  
-> [make an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UU83Y25Jd3FfQnhjfGRlZmF1bHR8MTcyMDRkOTExMjgzY2QxOTVhYmFhZjM4MmRiMzg1MmM)  // [join by zoom](https://nyu.zoom.us/my/billythemusical)  
+> [make an appointment](https://calendar.google.com/calendar/selfsched?sstoken=UURhMHBITldUWHA0fGRlZmF1bHR8ODAyNTk4MDM4YTcyMTRlYjBjMTFiMDAyOGNmYjM0YmM)  // [join by zoom](https://nyu.zoom.us/my/billythemusical)  
 
 GA contact:
 
