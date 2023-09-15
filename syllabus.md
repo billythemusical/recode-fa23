@@ -10,7 +10,7 @@ Fall, 2023
 
 Class time & location:
 
-> Tue / Thu, 10:40am - 12:20pm  
+> Tue / Thu, 10:40am - 12:10pm  
 > 370 Jay St (Brooklyn Campus), 4th floor, Room 410
 
 Instructor contact:
