@@ -28,6 +28,11 @@ GA contact:
 > [make an appointment](https://calendar.app.google/d4t3TPxmR5xUcJ7Z6) // [join by zoom](https://nyu.zoom.us/my/lucia.go)  
 > or let me know if you'd like to meet in person at 370 Jay St
 
+For additional assistance outside of class, please check out the [Coding Lab](https://codinglab.itp.io) for help. They are a student-run organization that helps students with their code and also hosts workshops and other events throughout the semester.  
+
+<a href="https://codinglab.itp.io">
+<img width=200 src="./images/coding-lab-crop.jpg" />
+</a>
 
 <br>
 
