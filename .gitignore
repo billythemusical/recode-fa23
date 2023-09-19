@@ -1,4 +1,4 @@
-misc/
+**/misc/
 images/misc/
 .DS_Store
 node_modules/
