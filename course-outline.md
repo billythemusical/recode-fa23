@@ -119,6 +119,19 @@ Here's a handy [HTML / CSS Cheat Sheet](https://docs.google.com/document/d/1yCs8
 
 ## Module 2 - 🍦 Vanilla & Asynchronous Javascript  
 
+[CLASS NOTES](./modules/02-vanilla-js/vanilla-js.md)
+
+>If HTML & CSS are the body and the clothing, Javascript makes us dance mmmmk 🤸🏼‍♂️
+* Navigating the **DOM**
+    - [The Document Object Model](https://www.w3schools.com/js/js_htmldom.asp)
+* Using `document.getElementById()`
+* Callbacks, making *do* without `draw()`
+* `setTimeout()` to trigger events, make loops 🔄
+
+- `async/await` using `fetch()`  
+    - build API request with `URL`
+    - `try/catch` blocks for errors
+
 ## Module 3 - Working with External Libraries  
 
 ## Module 4 - Working with Graphics & Pixels  
