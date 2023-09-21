@@ -1,12 +1,78 @@
-## Vanilla Javascript
+## Why p5?
 
 p5.js simplifies many complicated Javascript operations into easier, user-friendly building blocks, much like its predecessor Processing did for the Java programming language. Each also used the same metaphor of "drawing on a screen" which appealed more immediately to artists and those who work in visual mediums.  
 
-By simplifying many the complex and esoteric operations, p5.js provides a more intuitive framework which lowers the bar for entry into programming.  That is not to say that p5.js is only for beginners, as it is a community project with many hundreds of contributors and users around the world.
+By simplifying many of the complex and esoteric operations, p5.js provides a more intuitive framework which lowers the bar for entry into programming.  That is not to say that p5.js is only for beginners, as it is a community project with many hundreds of contributors and users around the world.
 
-*** 
+For example, here is a side-by-side comparison of how you would draw a circle on the screen in p5.js vs. vanilla javascript:
 
-One of the goals of this class is to help you break out of the p5.js bubble and be able to adapt to the world of 'vanilla,' aka plain, Javascript.  Let's look at the code we wrote today in class which uses one of Javascript's many built-in functions, namely `setTimeout`.  
+<div style="display: flex; justify-content: space-between;">
+  <div style="flex: 1; padding: 10px;">
+
+  ```js
+  // p5.js code
+  ellipse(200, 200, 50, 50);
+  ```
+
+  </div>
+  <div style="flex: 1; padding: 10px;">
+
+  ```js
+  // Vanilla JS code
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.beginPath();
+  ctx.arc(200, 200, 25, 0, 2 * Math.PI);
+  ctx.stroke();
+  ```
+  </div>
+</div>
+
+p5 is the clear winner here in the case of the canvas! But as we have seen in the case of our hand-coding exercises, HTML can be fun to write and a better choice when all you need is a simple informational website.
+
+## Vanilla Javascript
+
+Vanilla Javascript is all the built-in or default javascript that all web browsers provide as a baseline without any external libraries added to the mix. And you can do a lot with vanilla js, and indeed all external libraries are abstractions of these base functionalities, i.e. external libraries leverage the capabilities of vanilla javascript and make them much easier, flexible, and efficient to work with, as we saw above in the case of p5.js.
+
+But if all we learned was p5.js, we would be cut off from the wider, open-source world of web development, which was around well before p5.js and continues to grow and expand around it. So let's talk nuts and bolts about how Javascript fits into the HTML and CSS picture we have painted thus far.
+
+## Script tags
+
+To include Javascript in an HTML file, we enclose it in a `<script>` tag, similar to how we use the `<style>` tag for CSS. You can also include external Javascript files by adding a `src` attribute, like so `<script src="path/to/file.js" />`. This `src` path can be loaded from a online resource as well, as we will see later when working with external libraries.
+
+## Debugging
+
+Javascript is interpreted line by line, so if there is an error in the code, that error will be printed the the browser's console. You can view this console in Chrome by clicking View > Developer > Developer Tools and navigating to the Console tab, or `CMD+OPT+J` on a Mac or `CTRL+SHFT+J` on Windows.
+
+To print something to the console, you simple type `console.log('something')`. You can print variable, strings or integers like so:
+```js
+let x = 10
+console.log(x)
+// outputs 10
+``` 
+...or even multiple lines using a carriage return `\n`.
+```js
+console.log('Print\nover\nfour\nlines')
+// outputs
+Print
+over
+four
+lines
+```
+When you have an error, the browser will usually try to give you a description of the error and point you to a line where the error occured and in which document. See an example below:
+
+![]()
+
+## Callbacks
+
+A function that is passed as an argument to be called at a later date is often referred to as a 'callback' function. The concept of callbacks is ubiquitous in Javascript and speaks to its asynchronous, event-based nature, where as, up until now, if you have been working exclusively in p5.js, you have mostly relied on the `draw` loop and perhaps `frameCount` to drive events.
+
+However, Javascript has many built-in features to allow you to track events that happen outside of linear time and that are interdependent on other events that happen either by user interaction or system events and we are given much access to observe and manipulate these events to build a myriad of experiences.
+
+## setTimeout
+
+Let's look at the code we wrote today in class which uses one of Javascript's many built-in functions, namely `setTimeout`.  
 
 `setTimeout` first takes two arguments: a function or 'callback' and a delay time in milliseconds. The delay time is how long `setTimeout` will wait until it executes or 'calls' the callback function. 
 

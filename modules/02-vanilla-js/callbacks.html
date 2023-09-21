@@ -8,7 +8,7 @@
             margin-left: 20px;
             font-size: 24px;
             font-family: monospace;
-            background-image: url('../../images/bkgd.jpg');
+            background-image: url('./bkgd.jpg');
         }
 
         input {
@@ -21,15 +21,40 @@
 <body>
 
     <h3>Working with Callbacks</h3>
-    <img id="frog" src="../../images/frawg.jpg" width=200px />
+    <img id="frog" src="./frawg.jpg" width=200px />
     <input id="button" type="button" value="Grow!" />
 
     <script>
         // 1) let's make the frog grow!
+        const frog = document.getElementById('frog')
+        const button = document.getElementById('button')
+        button.addEventListener('click', growFrog)
 
-        // 2) now can we do setTimeout?
+        function growFrog() {
+            frog.style.width = "400px"
+            // console.log(frog)
+            setTimeout(shrinkFrog, 1000)
 
-        // 3) what about loops??
+        }
+
+        // 2) Let's use setTimeout to make a loop that
+        // toggles the frog size back and forth
+
+        // true = 1
+        // false = 0
+        let toggle = 0
+
+        function shrinkFrog() {
+            if (!toggle) {
+                frog.style.width = "400px"
+                toggle = 1
+            } else {
+                frog.style.width = "200px"
+                toggle = 0
+            }
+            setTimeout(shrinkFrog, 1000)
+        }
+
     </script>
 </body>
 
