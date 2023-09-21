@@ -60,17 +60,80 @@ over
 four
 lines
 ```
-When you have an error, the browser will usually try to give you a description of the error and point you to a line where the error occured and in which document. See an example below:
 
-![]()
+### Errors
 
-## Callbacks
+When you have an error, the browser will usually try to give you a description of the error and point you to where the error occurred in your code and in which document. See an example below with a breakdown:
 
-A function that is passed as an argument to be called at a later date is often referred to as a 'callback' function. The concept of callbacks is ubiquitous in Javascript and speaks to its asynchronous, event-based nature, where as, up until now, if you have been working exclusively in p5.js, you have mostly relied on the `draw` loop and perhaps `frameCount` to drive events.
+![](../../images/console-error.jpg)
 
-However, Javascript has many built-in features to allow you to track events that happen outside of linear time and that are interdependent on other events that happen either by user interaction or system events and we are given much access to observe and manipulate these events to build a myriad of experiences.
+Errors are usually <span style="color: red;">highlighted in red</span> with the following info: 
+- a description of the error
+  - this can vary significantly in usefulness, depending on the library or API you're working with
+- the file name where the error originated from 
+- the line number in the file where the error is
+- the character in the line where the error begins
+  - typically ignored as the line number is helpful enough
 
-## setTimeout
+## Using the DOM
+
+From W3 // https://www.w3schools.com/jsref/dom_obj_document.asp
+```
+When HTML is loaded into a web browser, it becomes a document object. 
+
+The document object is the root node of the HTML document.
+
+The document object is a property of the window object.
+
+The document object is accessed with:
+
+window.document or just document
+```
+The Document Object Model or `DOM` allows us to access all of the HTML and CSS elements in a web page. The `document` object has many properties that are accessible to us and can be used straight away. Here is an example of how to assign an element to a variable and change some attribute of that element, using the `document` object as our access point:  
+
+```js
+const myImage = document.getElementById('myImage')
+myImage.style.width = "400px"
+```  
+
+Now, this is assuming we have an HTML element on the page that fits this description, i.e. `<img id='myImage' ... />`
+
+There are many other ways to access HTML elements via the `document` object, like by using: 
+- [`getElementsByClassName`](https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp)
+- [`getElementsByTagName`](https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp)
+- and many others [here](https://www.w3schools.com/jsref/dom_obj_document.asp)...
+
+
+## Events
+
+Up until now, if you have been working exclusively in p5.js, you have mostly relied on a mix of the `draw` loop, `frameCount`, logic, and variables to drive events. However, Javascript has many built-in features that allow you to track events that happen asynchronously, so outside of linear time. This can be hard to grasp at first unless we understand the concept of callback functions and events. 
+
+There are many event listeners built into the browser by default that occur whether we are listening to them or not. For example, each time the browser finishes loading all of the HTML into the page, the `window` fires off a "load" event. We can listen to that event like so:
+
+```js
+window.addEventListener("load", handleLoad);
+
+function handleLoad() {
+  console.log('The window has finished loading!')  
+}
+``` 
+
+This type of event-based behavior makes for a very robust experience since the user does not have to follow one set path for interaction.
+
+#### Callbacks
+
+A function that is passed as an argument to be called at a later date is often referred to as a callback function. `handleLoad` is an example of a callback used above. The "handleSomething" is a common naming convention. It's helpful for readability to give your functions descriptive names. Below is an example of assigning a callback to a button click:
+
+```js
+const button = document.getElementById('myButton')
+button.addEventListener('click', handleButtonClick)
+
+function handleButtonClick() {
+  console.log('The button was clicked!')
+}
+```
+
+### setTimeout
 
 Let's look at the code we wrote today in class which uses one of Javascript's many built-in functions, namely `setTimeout`.  
 
