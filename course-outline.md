@@ -119,7 +119,7 @@ Here's a handy [HTML / CSS Cheat Sheet](https://docs.google.com/document/d/1yCs8
 
 ## Module 2 - 🍦 Vanilla & Asynchronous Javascript  
 
-[CLASS NOTES](./modules/02-vanilla-js/vanilla-js.md)
+[CLASS NOTES](./modules/02-vanilla-js/vanilla-js.md)  
 
 >If HTML & CSS are the body and the clothing, Javascript makes us dance mmmmk 🤸🏼‍♂️
 * Navigating the **DOM**
@@ -131,6 +131,11 @@ Here's a handy [HTML / CSS Cheat Sheet](https://docs.google.com/document/d/1yCs8
 - `async/await` using `fetch()`  
     - build API request with `URL`
     - `try/catch` blocks for errors
+
+Some relevant Coding Train Videos: 
+- [setTimeout](https://www.youtube.com/watch?v=nGfTjA8qNDA&ab_channel=TheCodingTrain)
+- [fetch & async/await](https://www.youtube.com/watch?v=tc8DU14qX6I&ab_channel=TheCodingTrain)
+
 
 ## Module 3 - Working with External Libraries  
 
