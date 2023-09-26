@@ -5,14 +5,23 @@
     <title>Fetch Example</title>
     <style>
         body {
-            margin-left: 20px;
+            justify-content: center;
+            align-content: center;
+            display: flex;
             font-size: 24px;
             font-family: monospace;
-            background-image: url('../bkgd.jpg');
+            background-image: url('./bkgd.jpg');
+        }
+
+        .inputs {
+            justify-content: center;
+            display: flex;
+            gap: 10px;
         }
 
         input {
             font-family: monospace;
+            font-size: 18px;
             padding: 5px;
         }
     </style>
@@ -21,30 +30,21 @@
 <body>
     <div>
         <h3>❽ ⓼ Magic 8 Ball ⓼ ❽</h3>
-        <!-- <input id="question" type="text" placeholder="Your question here" /> -->
-        <input id="question" type="text" value="Will it rain?" />
-        <input id="ask" type="button" value="Ask it!" />
+        <div class="inputs">
+            <input id="question" type="text" value="Your question here..." />
+            <input id="ask" type="button" value="Ask it!" />
+        </div>
         <h3>🔮&nbsp;<span id="answer">No answer yet...</span></h3>
     </div>
     <script>
+
         const question = document.getElementById("question")
         const answer = document.getElementById("answer")
         const button = document.getElementById("ask")
         button.addEventListener('click', askQuestion)
 
-        async function askQuestion() {
-
-            let url = 'http://lowspeedinternet.com:2999/'
-            let response = await fetch(url)
-            let data = await response.json()
-            console.log(data) // take a look 👀 at what we got
-
-            // add some suspense to the response...
-            let transitTime = 4000
-            setTimeout(() => {
-                answer.innerHTML = data.answer
-            }, transitTime)
-
+        function askQuestion() {
+            // ask the question!
         }
 
     </script>
