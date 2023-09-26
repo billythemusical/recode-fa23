@@ -31,7 +31,7 @@
     <div>
         <h3>❽ ⓼ Magic 8 Ball ⓼ ❽</h3>
         <div class="inputs">
-            <input id="question" type="text" value="Your question here..." />
+            <input id="question" type="text" placeholder="Your question here..." />
             <input id="ask" type="button" value="Ask it!" />
         </div>
         <h3>🔮&nbsp;<span id="answer">No answer yet...</span></h3>
@@ -45,6 +45,11 @@
 
         function askQuestion() {
             // ask the question!
+            console.log(question.value)
+
+            // use fetch()
+
+            // let url = 'http://lowspeedinternet.com:2999/?question='
         }
 
     </script>

@@ -138,8 +138,15 @@ Some relevant Coding Train Videos:
 - [fetch & async/await](https://www.youtube.com/watch?v=tc8DU14qX6I&ab_channel=TheCodingTrain)
 - 
 
+📕 **Reading #2 - TO DO before class on Thu Sep 28th:**
 
+We will be setting up Github accounts to turn in our classwork from here on out. Assignment 2 will be turned in and published as a Github Pages site. We will also be able to easily include Assignment 1 into this platform as well.
 
+1. Create a [Github account](https://github.com). If you already have one, great.
+2. Download and install [Github Desktop](https://desktop.github.com/). If you are already familiar (and adept?) with Git, that's fine too. Better yet, let me know!
+3. Post the link to your Github account page to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) under Reading 2. The format will be `https://github.com/yourusername` where `yourusername` is the user name you chose when you just signed up. For example, my link is `https://github.com/billythemusical`. 
+
+>Don't worry that your page has no content yet... we will be changing that... 😁 
 
 ## Module 3 - Working with External Libraries  
 
