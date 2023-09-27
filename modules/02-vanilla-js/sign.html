@@ -8,9 +8,18 @@
             justify-content: center;
             align-content: center;
             display: flex;
-            font-size: 24px;
+            font-size: 18px;
             font-family: monospace;
             background-image: url('./bkgd.jpg');
+        }
+
+        h3,
+        h2,
+        h1,
+        p {
+            justify-content: center;
+            align-content: center;
+            display: flex;
         }
 
         .inputs {
@@ -35,11 +44,15 @@
 </head>
 
 <body>
-    <div>
-        <h3>❽ ⓼ Sign Language Reference ⓼ ❽</h3>
+    <div class="container">
+        <h1>✌🏼 👋🏼 Sign Language Reference 👋🏼 ✌🏼</h1>
+        <p>Using the&nbsp;<a href="https://smart-sign-dictionary.herokuapp.com/">Smart Sign Dictionary API</a>&nbsp;by
+            Lucia
+            Gomez.🌟
+        </p>
         <div class="inputs">
             <input id="question" type="text" placeholder="Find a word" />
-            <input id="ask" type="button" value="Get reference!" />
+            <input id="ask" type="button" value="Get the sign!" />
         </div>
 
         <div id="videoContainer">
@@ -59,9 +72,9 @@
             // ask the question!, testing...
             // console.log(question.value)
 
-            // We need a proxy, or middleman, bypass the CORS restrictions.
-            // By adding this URL below before hitting Lucia's API,
-            // we can skip the CORS restrictions. Read more here - https://github.com/Rob--W/cors-anywhere
+            // To attain the proper CORS headers, we can add the URL below hitting Lucia's API. 
+            // This is not a "fix-all" solution, but a "hack for now"
+            // You can read more here - https://github.com/Rob--W/cors-anywhere
             const bypassCORS = "https://cors-anywhere.herokuapp.com/"
             let apiUrl = "https://smart-sign-dictionary.herokuapp.com/query/"
             let url = bypassCORS + apiUrl + question.value
