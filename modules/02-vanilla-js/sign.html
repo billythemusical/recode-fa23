@@ -29,12 +29,12 @@
 
 <body>
     <div>
-        <h3>❽ ⓼ Magic 8 Ball ⓼ ❽</h3>
+        <h3>❽ ⓼ Sign Langauge Reference ⓼ ❽</h3>
         <div class="inputs">
-            <input id="question" type="text" value="Will it rain?" />
+            <input id="question" type="text" placeholder="Find a word" />
             <input id="ask" type="button" value="Ask it!" />
         </div>
-        <h3>🔮&nbsp;<span id="answer">No answer yet...</span></h3>
+        <!-- <h3>🔮&nbsp;<span id="answer">No answer yet...</span></h3> -->
     </div>
     <script>
 
@@ -48,11 +48,13 @@
             // console.log(question.value)
 
             // use fetch()
-            let url = 'http://lowspeedinternet.com:2999/?question='
-            url = url + question.value
-            // console.log(url)
+            let apiUrl = "https://smart-sign-dictionary.herokuapp.com/query/"
+            apiUrl = apiUrl + question.value
 
-            const response = await fetch(url)
+            let youtubeUrl = 'https://www.youtube.com/watch?v='
+
+
+            const response = await fetch(apiUrl, { mode: 'no-cors' })
             const data = await response.json()
             console.log(data.answer)
 
