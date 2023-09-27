@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Fetch Example</title>
+    <title>Sign Language Example</title>
     <style>
         body {
             justify-content: center;
@@ -24,17 +24,29 @@
             font-size: 18px;
             padding: 5px;
         }
+
+        #videoContainer {
+            justify-content: center;
+            display: grid;
+            margin-top: 20px;
+            gap: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <h3>❽ ⓼ Sign Langauge Reference ⓼ ❽</h3>
+        <h3>❽ ⓼ Sign Language Reference ⓼ ❽</h3>
         <div class="inputs">
             <input id="question" type="text" placeholder="Find a word" />
-            <input id="ask" type="button" value="Ask it!" />
+            <input id="ask" type="button" value="Get reference!" />
         </div>
-        <!-- <h3>🔮&nbsp;<span id="answer">No answer yet...</span></h3> -->
+
+        <div id="videoContainer">
+
+            <!-- Here is where we will prepend our videos -->
+
+        </div>
     </div>
     <script>
 
@@ -44,21 +56,39 @@
         button.addEventListener('click', askQuestion)
 
         async function askQuestion() {
-            // ask the question!
+            // ask the question!, testing...
             // console.log(question.value)
 
-            // use fetch()
+            // We need a proxy, or middleman, bypass the CORS restrictions.
+            // By adding this URL below before hitting Lucia's API,
+            // we can skip the CORS restrictions. Read more here - https://github.com/Rob--W/cors-anywhere
+            const bypassCORS = "https://cors-anywhere.herokuapp.com/"
             let apiUrl = "https://smart-sign-dictionary.herokuapp.com/query/"
-            apiUrl = apiUrl + question.value
+            let url = bypassCORS + apiUrl + question.value
 
-            let youtubeUrl = 'https://www.youtube.com/watch?v='
-
-
-            const response = await fetch(apiUrl, { mode: 'no-cors' })
+            // use fetch() to get the sign API!
+            const response = await fetch(url)
             const data = await response.json()
-            console.log(data.answer)
+            console.log(data)
 
-            answer.innerHTML = data.answer
+            // outputs { youtubeIds: Array(4) }
+            let videoId = data.youtubeIds[0]
+
+            // We'll create a new <iframe> element for the YouTube video
+            // See the W3 reference for YouTube iframe's here https://www.w3schools.com/html/html_youtube.asp
+            const newVideo = document.createElement('iframe')
+            // add the src link and the videoId we got from Lucia's API
+            newVideo.src = "https://www.youtube.com/embed/" + videoId
+            let videoWidth = 600
+            newVideo.width = videoWidth.toString() + "px"
+            newVideo.height = Math.floor(videoWidth * (9 / 16)).toString() + "px"
+            // append the new <iframe> element to our HTML above
+            // first we get the container...
+            const videoContainer = document.getElementById('videoContainer')
+            // then append it...
+            // videoContainer.append(newVideo)
+            // using prepend instead of append will keep the latest video on top
+            videoContainer.prepend(newVideo)
 
         }
 
