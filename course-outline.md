@@ -177,11 +177,13 @@ Build your own interactive API app! You can pick from the list of app ideas belo
     - Using the [NewsAPI](https://newsapi.org/) you can:
         - Give your users the latest headlines.
         - Let them search for articles on a subject.
-        - Incorporate an image search API into the results.
+        - Expand it to incorporate an accompnaying image or video search API into the results (Google image or YouTube?)
 - ✨ Roll Your Own (???)
     - Find your own (preferably free) API online or on a service like [API Ninjas](https://api-ninjas.com) and build your app according to the parameters set out above.
 
-⏩ Publish your working site to your Github Pages site and upload the link to the page on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+⏩ Publish your working site to your private Github Pages site and upload the link to the page on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+
+>For now, this repo will be a *private* Github Pages site so that your API keys are not exposed to the wider web. We will have set up your repositories to be shared with us instructors in the initial setup.
 
 ⏱ *Approx. time to complete: 4-6 hours*  
 
