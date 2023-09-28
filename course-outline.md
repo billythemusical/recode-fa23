@@ -168,22 +168,25 @@ Build your own interactive API app! You can pick from the list of app ideas belo
         - difficulty
         - type of question
     - Keep score and manage multiple players
+
 - 🛰 Space App (Medium)
     - Using [NASA's API](https://api.nasa.gov/), you can:
         - Explore the [Image and Video Library](https://api.nasa.gov/#:~:text=images.nasa.gov-,NASA%20Image%20and%20Video%20Library,-Use%20this%20API)
         - Get the [APOD](https://api.nasa.gov/#:~:text=of%20the%20Day-,APOD,-One%20of%20the) Astronomy Picture Of the Day
         - Get the latest Space Weather Database [Notifications](https://api.nasa.gov/#:~:text=06%26api_key%3DDEMO_KEY-,Notifications,-https%3A//api.nasa)
+
 - 📰 News App (Medium)
     - Using the [NewsAPI](https://newsapi.org/) you can:
         - Give your users the latest headlines.
         - Let them search for articles on a subject.
-        - Expand it to incorporate an accompnaying image or video search API into the results (Google image or YouTube?)
+        - Expand it to incorporate an accompanying image or video search API into the results (Google image or YouTube?)
+        
 - ✨ Roll Your Own (???)
     - Find your own (preferably free) API online or on a service like [API Ninjas](https://api-ninjas.com) and build your app according to the parameters set out above.
 
-⏩ Publish your working site to your private Github Pages site and upload the link to the page on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+⏩ Once you're done, `commit` your changes in Github Desktop and `push` your changes to Github. Then share the link to your private repo [this form](https://forms.gle/qFmdmwFxJA1Jccs16).
 
->For now, this repo will be a *private* Github Pages site so that your API keys are not exposed to the wider web. We will have set up your repositories to be shared with us instructors in the initial setup.
+>For now, this repo will be set to *private* so that your API keys are not exposed to the wider web. We will have set up your repositories to be shared with us instructors in the initial setup. Later work will be possible to use public repos and Github Pages.
 
 ⏱ *Approx. time to complete: 4-6 hours*  
 
