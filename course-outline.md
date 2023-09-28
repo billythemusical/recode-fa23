@@ -146,7 +146,44 @@ We will be setting up Github accounts to turn in our classwork from here on out.
 2. Download and install [Github Desktop](https://desktop.github.com/). If you are already familiar (and adept?) with Git, that's fine too. Better yet, let me know!
 3. Post the link to your Github account page to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) under Reading 2. The format will be `https://github.com/yourusername` where `yourusername` is the user name you chose when you just signed up. For example, my link is `https://github.com/billythemusical`. 
 
->Don't worry that your page has no content yet... we will be changing that... 😁 
+📌 **Assignment 2 - API APP📌 - due before class on Thu Oct 5th:** 
+
+Build your own interactive API app! You can pick from the list of app ideas below and make an interactive app that does the following:  
+
+1. Takes user input of some kind - a button press, some text, location data, anything - be creative if you like! 
+2. Sends that user input to the chosen API.
+3. Displays the results of the API to your user in a visually compelling manner.  
+
+>Kudos/bonus points for sleek UI/UX or totally retro/expertly awkward designs. ◻️ // 👹
+
+- 🌦 Weather App (Medium)
+    - Use the [OpenWeatherMap API](https://openweathermap.org/api) or a similar weather API to fetch the current weather for a given city.
+    - Change the app background based on the weather condition using the fetched data.
+    - Show the 5 day forecast!
+
+- ⁇ Trivia App (Hard)
+    - Use the [Open Trivia Database](https://opentdb.com/) to make a trivia game.
+    - Let users can select:
+        - category
+        - difficulty
+        - type of question
+    - Keep score and manage multiple players
+- 🛰 Space App (Medium)
+    - Using [NASA's API](https://api.nasa.gov/), you can:
+        - Explore the [Image and Video Library](https://api.nasa.gov/#:~:text=images.nasa.gov-,NASA%20Image%20and%20Video%20Library,-Use%20this%20API)
+        - Get the [APOD](https://api.nasa.gov/#:~:text=of%20the%20Day-,APOD,-One%20of%20the) Astronomy Picture Of the Day
+        - Get the latest Space Weather Database [Notifications](https://api.nasa.gov/#:~:text=06%26api_key%3DDEMO_KEY-,Notifications,-https%3A//api.nasa)
+- 📰 News App (Medium)
+    - Using the [NewsAPI](https://newsapi.org/) you can:
+        - Give your users the latest headlines.
+        - Let them search for articles on a subject.
+        - Incorporate an image search API into the results.
+- ✨ Roll Your Own (???)
+    - Find your own (preferably free) API online or on a service like [API Ninjas](https://api-ninjas.com) and build your app according to the parameters set out above.
+
+⏩ Publish your working site to your Github Pages site and upload the link to the page on [this form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+
+⏱ *Approx. time to complete: 4-6 hours*  
 
 ## Module 3 - Working with External Libraries  
 
