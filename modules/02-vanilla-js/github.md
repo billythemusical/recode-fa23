@@ -11,7 +11,7 @@
 3. Once installed, launch the Github Desktop and sign in.
 ***
 PAUSE
->We will create a Github folder on our computer to store our work in.
+>We will create a `Github` folder on our computer to store our work in.
 4. Choose "Create a new repository on your hard drive..."
 5. In the next dialog box, do the following:
     - **Name**: this will be where you keep your classwork, so choose a name that relates to the class, like "recode-assignments" or whatever.
