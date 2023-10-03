@@ -209,10 +209,6 @@ Fun external libraries
 - Tone.js (using v.13)
 - dat.gui
 
-Modules vs. 
-
-
-
 ## Module 4 - Working with Graphics & Pixels  
 
 ## Module 5  - Coding with Generative AI  

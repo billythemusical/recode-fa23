@@ -10,11 +10,14 @@ p5.js itself is open source, as in, you can easily look at the source code.  It 
 
 ### Content Delivery Networks (CDN)
 
+You'll notice the root URL that provided the p5.js library is from a `cdnjs.cloudflare.com`. The CDN in `cdnjs` stands for "Content Delivery Network" which is a common entity among cloud services. It's a way for code libraries to have their code hosted by a reliable service online to be delivered to end-users and also provide a place to manage software versions. So if I wanted to load a previous version of the p5.js library, I could replace the version numbers in the URL  `.../p5.js/1.7.0/p5.js">`.
+
 Content delivery networks are online repositories for code that can easily be included into projects via a web accessible link.  You can also download directly from these networks and include, or package, the code manually.  p5.js uses on, as you can see in the source of the script we use in the web editor.  
 
 The drawback in using code in this way is that you depend on the CDN to make the code always available. Furthermore, as much code inevitably updates, you could lose access to old versions or mistakingly download the latest version which has breaking updates, aka updates that are not compatible with older versions of the code.
 
 Later this term, we will look later at platforms like [Node.js](https://nodejs.org/en/) which have a streamlined way for you to download packages, via the Node Package Manager or [`npm`](https://www.npmjs.com/).  Package managers help you to keep an inventory of what code your project depends on, aka the project's dependencies, and easily add and remove various open source packages, of which there are thousands.
+
 
 ### Staying Organized
 
@@ -42,4 +45,3 @@ These files can of course be linked from the web, as in the case of p5.js when u
 
 ### CDN's, aka Content Delivery Networks
 
-You'll notice the root URL that provided the p5.js library is from a `cdnjs.cloudflare.com`. The CDN in `cdnjs` stands for "Content Delivery Network" which is a common entity among cloud services. It's a way for code libraries to have their code hosted by a reliable service online to be delivered to end-users and also provide a place to manage software versions. So if I wanted to load a previous version of the p5.js library, I could replace the version numbers in the URL  `.../p5.js/1.7.0/p5.js">`.
