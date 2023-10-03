@@ -192,6 +192,27 @@ Build your own interactive API app! You can pick from the list of app ideas belo
 
 ## Module 3 - Working with External Libraries  
 
+Check in on Assignment 2
+
+[CLASS NOTES](./modules/03-external-libraries/external-libraries.md)
+
+- p5.js our first external library 😂😉😎
+- tidy up our HTML files using external files
+- Rule of 👍🏼: load your libraries first, interactive scripts later
+- placing p5 canvas on the page
+- CDN's
+- minified libraries 
+
+Fun external libraries
+- Green Sock (gsap)
+>Warning: You may see ANONYMOUS functions🕵️‍♀️ `() => console.log('say wha?')`
+- Tone.js (using v.13)
+- dat.gui
+
+Modules vs. 
+
+
+
 ## Module 4 - Working with Graphics & Pixels  
 
 ## Module 5  - Coding with Generative AI  
