@@ -199,7 +199,7 @@ Check in on Assignment 2
 - p5.js our first external library 😂😉😎
 - tidy up our HTML files using external files
 - Rule of 👍🏼: load your libraries first, interactive scripts later
-- placing p5 canvas on the page
+- placing p5 canvas on the page - [Processing/p5.js tutorial](https://github.com/processing/p5.js/wiki/Positioning-your-canvas#making-the-canvas-fill-the-window)
 - CDN's
 - minified libraries 
 

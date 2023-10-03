@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* display: flex; */
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    /* https: //www.w3schools.com/cssref/pr_pos_z-index.php */
+}
