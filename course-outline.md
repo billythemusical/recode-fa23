@@ -6,7 +6,7 @@ Fall 2023
 [Introduction](#introduction) - Whuuuut(s)?  
 [Module 1](#module-1---foundations) - Foundations (HTML / CSS)  
 [Module 2](#module-2---🍦-vanilla--asynchornous-javascript) - Vanilla & Asynchronous Javascript  
-[Module 3]() - Working with External Libraries*  
+[Module 3](#module-3---working-with-external-libraries) - Working with External Libraries*  
 [Module 4]() - Working with Graphics & Pixels*  
 [Module 5]() - Coding with Generative AI  
 [Module 6]() - Developing Locally  
