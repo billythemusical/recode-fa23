@@ -6,7 +6,7 @@ Obviously, these companies have various motivations for releasing these tools, s
 
 ### p5.js Contributor Community 
 
-p5.js itself is open source, as in, you can easily look at the source code.  It also has its own set of open source libraries which were developed to work easily with p5.js.  If you visit this page, you'll see that the types and quality of documentation varies.  This variation demonstrates one of the difficulties in working with software that is mostly free - without the incentive for compensation, developers lose interest in their project.  The nice thing is that p5.js has a group of managers and exists as a part of a the larger [Processing Foundation](https://processingfoundation.org/) community, which has many thousands of enthusiastic users from around the world, such that the code stays up , that many things do stay updated.
+p5.js itself is open source, as in, you can easily look at the source code.  It also has its own set of open source libraries which were developed to work easily with p5.js.  If you visit this page, you'll see that the types and quality of documentation varies.  This variation demonstrates one of the difficulties in working with software that is mostly free - without the incentive for compensation, developers lose interest in their project.  The nice thing is that p5.js has a group of managers and exists as a part of a the larger [Processing Foundation](https://processingfoundation.org/) community, which has many thousands of enthusiastic users from around the world, such that the code stays up to date and that many things do stay updated.
 
 ### Content Delivery Networks (CDN's)
 

@@ -1,0 +1,124 @@
+<!-- References&Tutorials: https://www.youtube.com/watch?v=FBTlPriUyWY -->
+<!-- How to use nasa api: https://github.com/nasa/apod-api -->
+<!-- Get my api key: https://api.nasa.gov/ -->
+<!-- How to get date: https://www.scaler.com/topics/get-current-date-in-javascript/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>✦ ✧ NASA API ✧ ✦</title>
+    <style>
+        html {
+            background: url('./cool-background.png') no-repeat fixed center;
+            background-size: cover;
+        }
+
+        body {
+            margin: 50px auto;
+            padding: 5px 25px;
+            width: 800px;
+            background-color: rgba(255, 255, 255, .75);
+
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            font-size: 24px;
+            font-family: monospace;
+            background-image: url('./bkgd.jpg');
+        }
+
+        .inputs {
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            font-family: monospace;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #explanation {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>✦ ✧ NASA API ✧ ✦</h1>
+
+        <!-- create a button for conversation -->
+        <div class="inputs">
+            <label for="date">Number:</label>
+            <input id="question" type="text" />
+            <input id="ask" type="button" value="Ask it!" />
+        </div>
+        <h2>🔮&nbsp;<span>type in a number</span>&nbsp;🔮</h2>
+
+        <div id="image-container"></div>
+
+    </div>
+
+    <!-- global.js -->
+    <!-- logic: button pressed, fetch api content, load on page  -->
+    <script>
+        // setting Vanilla JS code 
+        // Vanilla JavaScript refers to using plain Javascript without any additional libraries or frameworks.
+        // create - A const variable cannot be reassigned
+        // calling id from html
+        // setting function 
+
+
+        // const question = document.getElementById("question")
+        // const answer = document.getElementById("answer")
+        // const button = document.getElementById("ask")
+        // button.addEventListener('click', askQuestion)
+
+
+        // const image= document.getElementById("img")
+        const source_data = document.getElementById("img_answer")
+        // const copyright = document.getElementById("copyright")
+        // const title = document.getElementById("title")
+        // const explanation = document.getElementById("explanation")
+        const button = document.getElementById("ask")
+        button.addEventListener('click', askQuestion)
+
+        // An event listener is a procedure in JavaScript that waits for an event to occur.
+        // await fetch can be used only in async function
+        // purpuse: waiting, giving more time for api content to load 
+
+        async function askQuestion() {
+            // ask the question!
+            // console.log(question.value)
+
+            // use fetch()
+            let url = 'http://api.nasa.gov/planetary/apod?api_key=' + '&count='
+            // updating the url element
+            url = url + question.value
+            console.log(url)
+
+
+            const response = await fetch(url)
+
+            const source_data = await response.json()
+
+            // console.log(source_data)
+
+            const imageContainer = document.getElementById('image-container')
+            const images = source_data.forEach(e => {
+                console.log(e)
+                const newImage = document.createElement('img')
+                newImage.src = e.url
+                newImage.style.width = "40%"
+                imageContainer.appendChild(newImage)
+            })
+
+        }
+
+    </script>
+</body>
+
+</html>

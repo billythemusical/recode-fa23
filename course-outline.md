@@ -209,6 +209,20 @@ Fun external libraries
 - Tone.js (using v.13)
 - dat.gui
 
+📕 **Reading 3 📕 - due before EOD <ins>Fri Oct 13th at 11:59pm</ins>:**
+
+Find an open source library that you would like to use for Assignment 3 and share the name of the library and CDN link in the "link to assignment" space on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+
+For example, if I was using the Green Sock library, my answer would be "Green Sock Animation Library https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+
+Here are some potential libraries that you may put to good use:
+- Three.js: 3D in the browser!
+- 
+
+📌 **Assignment 3 - Working With External Libraries 📌 - due before class on Tue Oct 17th:** 
+
+Now to spread your wings and fly out into the world of open source on your own! Using the library you have found, demonstrate the library in action on a page of your own creation using at least three (3) separate methods from the documentation.
+
 ## Module 4 - Working with Graphics & Pixels  
 
 ## Module 5  - Coding with Generative AI  
