@@ -88,6 +88,4 @@ import { add } from 'https://cdn.example.com/library.js';
 
 In conclusion, the journey from regular script tags to ES6 modules to import maps shows the evolution of JavaScript's module management in browsers. Each phase added more clarity, adaptability, and empowerment for developers.
 
-ChatGPT
-
-READ NEXT: Mixing Traditional Scripts and ES6 Modules? Better know the difference between Global scope and Module-level scope to ensure smooth and error-free code integration.
+>Trying to mix traditional scripts and ES6 modules? Check out [Scope in JS](./scope_in_js.md) to better understand the difference between Global scope and Module-level scope to ensure smooth and error-free code integration.
