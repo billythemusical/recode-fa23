@@ -227,7 +227,7 @@ Here are some you can choose from, but don't feel limited to these!
 
 The groups for this assignment are as follows:
 
-Azuré, Jexi, & Sarah  
+Jexi & Sarah  
 Joy & Pauline  
 Leah & Jalen  
 Q & Alyea 
