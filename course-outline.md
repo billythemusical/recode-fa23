@@ -211,17 +211,39 @@ Fun external libraries
 
 📕 **Reading 3 📕 - due before EOD <ins>Fri Oct 13th at 11:59pm</ins>:**
 
-Find an open source library that you would like to use for Assignment 3 and share the name of the library and CDN link in the "link to assignment" space on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16).  
+We will be working in randomly chosen groups for these Assignments. Pick an an open source library that you would like to use for Assignment 3 below and share the name of the library and CDN link in the "link to assignment" space on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16). As long as one of you turns in the form, it will count for all in the group.
 
 For example, if I was using the Green Sock library, my answer would be "Green Sock Animation Library https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
 
-Here are some potential libraries that you may put to good use:
-- Three.js: 3D in the browser!
-- 
+Here are some you can choose from, but don't feel limited to these!  
+- [Three.js](https://threejs.org/)  
+- [Tone.js](https://tonejs.github.io/demos)  
+- [ml5.js](https://ml5js.org/)  
+- [dat.gui](https://github.com/dataarts/dat.gui)  
+- [ZzFX Sound](https://killedbyapixel.github.io/ZzFX/)  
+- ...or one of the many p5.js [contributor libraries](https://p5js.org/libraries/#:~:text=A%20p5.js%20library%20can,of%20the%20p5.js%20community)!
 
 📌 **Assignment 3 - Working With External Libraries 📌 - due before class on Tue Oct 17th:** 
 
-Now to spread your wings and fly out into the world of open source on your own! Using the library you have found, demonstrate the library in action on a page of your own creation using at least three (3) separate methods from the documentation.
+The groups for this assignment are as follows:
+
+Azuré, Jexi, & Sarah  
+Joy & Pauline  
+Leah & Jalen  
+Q & Alyea 
+
+Now to spread your wings and fly out into the world of open source on your own! <ins>Only one person in your group needs to create the repo to turn in the assignment, but all should contribute to the work</ins>:
+1) Create a new repo called **03-external-libraries**.
+2) Demonstrate your chosen library in action on a web page of your own creation. 
+3) You must use at least **three (3) separate methods** from the documentation.
+4) Use the **README.md** section of your new repo to provide documentation as to why your group chose this library, what you like about it, why you find it useful, what problems you ran into. Screenshots of console errors are helpful! 
+>Style this special page using this [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/). We'll be using the README page more now to document our work and process.
+5) When your group is done, remember to:
+    - save your work
+    - `commit` it...
+    - and `push` the changes to Github using Github Desktop!
+
+6) Then turn in your group's final repo link on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday. Again, <ins>only one person in the group is required to do this.</ins> You will all receive the same grade for the assignment.
 
 ## Module 4 - Working with Graphics & Pixels  
 

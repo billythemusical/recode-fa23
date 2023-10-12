@@ -29,7 +29,6 @@ ES6 modules introduced a more controlled and localized scope mechanism:
 - **Explicit Exports/Imports**: To share values or functionalities between modules, you must explicitly export and then import them.
 - **Read-only Bindings**: Imported values are read-only bindings, not copies. This means you can access the live value of an imported variable but cannot reassign it directly.
 
-**Example**:
 ```javascript
 // counter.js
 export let count = 0;
