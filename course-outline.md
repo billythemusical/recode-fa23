@@ -232,7 +232,8 @@ Joy & Pauline
 Leah & Jalen  
 Q & Alyea 
 
-Now to spread your wings and fly out into the world of open source on your own! <ins>Only one person in your group needs to create the repo to turn in the assignment, but all should contribute to the work</ins>:
+Now to spread your wings and fly out into the world of open source on your own! <ins>Only one person in your group needs to create the repo to turn in the assignment, but all should contribute to the work</ins>:  
+
 1) Create a new repo called **03-external-libraries**.  
 2) Demonstrate your chosen library in action on a web page of your own creation.  
 3) You must use at least **three (3) separate methods** from the documentation.  
