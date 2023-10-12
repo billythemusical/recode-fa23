@@ -36,9 +36,3 @@ The Javascript is typically included/loaded later as it will be "asking for" thi
 These files can of course be linked from the web, as in the case of p5.js when using the [p5 web editor](https://editor.p5js.org). 
 
 ![An image of the default p5.js web editor's file structure and index.html code, showing how the p5.js library is loaded from a dynamic web link using a content delivery network or CDN.](../../images/p5js-html.png)
-
-### The Global Namespace
-
-When you include a library like p5.js in your HTML file, all of its built-in variables are available *globally*. This means that once the library is loaded, the built-in variables will be available anywhere you call for them in your code. That's why we generally load our library scripts at the top of the HTML file and run our interactive scripts later in the code.
-
-This is all well and good most of the time. But as you start to build your projects out and things get more complex, you can run into **namespace** issues, where your function and variable names start to overlap with those of the library or even libraries themselves have competing or virtually identical function names. So programmers often try to avoid "polluting the global namespace" by avoiding using global variables where possible and encapsulating them functions or classes where their scope is limited.
