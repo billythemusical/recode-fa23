@@ -1,9 +1,18 @@
 html,
 body {
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 20px;
     padding: 0;
+    background-color: dimgray;
     font-family: Courier;
+    height: min-content;
+}
 
+h1 {
+    color: white;
 }
 
 canvas {
@@ -11,11 +20,35 @@ canvas {
 }
 
 #interface {
+    background-color: gainsboro;
+    margin: 20px;
     padding: 10px;
     width: min-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: outlineAnim 10s infinite;
+}
+
+@keyframes outlineAnim {
+    0% {
+        outline: 5px dotted rgb(0, 207, 0);
+    }
+
+    50% {
+        outline: 5px dotted rgb(100, 20, 200);
+    }
+
+    100% {
+        outline: 5px dotted rgb(0, 207, 0);
+    }
+}
+
+button {
+    /* width: 100%; */
+    border: 1px solid black;
+    color: black;
+    /* background-color: rgb(0, 0, 0, 0); */
 }
 
 #button {
@@ -25,14 +58,14 @@ canvas {
     padding: 10px;
 }
 
-#interface > * {
+#interface>* {
     padding: 10px;
 }
 
 p {
+    font-size: 1.2em;
     position: relative;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
-    /* padding: 2px; */
+    /* padding: 10px; */
+    margin-top: 10px;
 }

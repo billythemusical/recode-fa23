@@ -8,7 +8,7 @@
     <script src="./js/libs/tone.min.js"></script>
     <script src="./js/tone-stuff.js"></script>
 
-    
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
 
@@ -17,9 +17,11 @@
 <body>
 
     <div>
+        <h1>Bouncing Ball Sequencer</h1>
         <div id="interface">
-            <div id="sketch-container">
-                <p>Press spacebar to start/stop!</p>
+            <div>
+                <p>Press space bar to start/stop!</p>
+                <div id="sketch-container"></div>
                 <div id="button">
                     <button width="100%" onclick="restartAudio()">
                         Press to restart audio 🔊
@@ -28,15 +30,15 @@
             </div>
             <div id="gui-container"></div>
         </div>
-        
+
     </div>
 
 
-    
+
     <script src="./js/sketch.js"></script>
     <script src="./js/gui-stuff.js"></script>
 
-    
+
 </body>
 
 </html>

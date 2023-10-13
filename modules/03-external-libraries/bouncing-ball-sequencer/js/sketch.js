@@ -63,7 +63,7 @@ function setup() {
 function draw() {
     background(backgroundColor.col);
     displayNotesGrid() // long function at bottom 
-    if(!pause) moveBall()
+    if (!pause) moveBall()
     checkEdges()
     constrainBallLocation()
     displayBall()
@@ -75,8 +75,8 @@ function moveBall() {
 }
 
 function constrainBallLocation() {
-    ball.y = constrain(ball.y, 0, height + 1) // to keep the ball on screen
-    ball.x = constrain(ball.x, 0, width + 1) // to keep the ball on screen
+    ball.y = constrain(ball.y, ball.size / 2, height - ball.size / 2) // to keep the ball on screen
+    ball.x = constrain(ball.x, ball.size / 2, width - ball.size / 2) // to keep the ball on screen
 }
 
 function displayBall() {
@@ -95,21 +95,21 @@ function checkEdges() {
         playNotes('y') // play notes before ball changes direction
         ball.ySpeed *= -1
     }
-    
+
 }
 
 function playNotes(axis) {
 
     // if the ball hits the top or bottom...
-    if(axis == 'y') { 
+    if (axis == 'y') {
 
         // look at the ball's x value and determine a zone
         let zone = floor((ball.x / height) * 4) // gives a number between 0 and 4
         let noteChoice = sequence1[zone]
         synth.triggerAttackRelease(notes[noteChoice], "4n")
 
-    // else if the ball hits either side
-    } else { 
+        // else if the ball hits either side
+    } else {
 
         // look at the ball's y value and determine a zone
         let zone = floor((ball.y / height) * 4) // gives a number between 0 and 4

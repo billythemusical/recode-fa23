@@ -4,14 +4,14 @@
 function restartAudio() {
     const audioCtx = new (window.AudioContext || window.webkitAudioContext);
     const context = new Tone.Context(audioCtx);
-    console.log('Restarting audio context.') 
+    console.log('Restarting audio context.')
 }
 
 const synthParams = {
     oscillator: {
-        0: 'triangle', 
-        1: 'sawtooth', 
-        2: 'sine', 
+        0: 'triangle',
+        1: 'sawtooth',
+        2: 'sine',
         3: 'square',
     },
     envelope: {
@@ -31,9 +31,9 @@ const filter = new Tone.Filter(8000, "lowpass").toMaster()
 synth.connect(filter)
 
 // An audio feedback delay effect
-const delayParams = { 
-    delayTime: 1.0, 
-    feedback: 0.0, 
+const delayParams = {
+    delayTime: 0.5,
+    feedback: 0.0,
     wet: 0.0
 }
 const delay = new Tone.FeedbackDelay(delayParams).toMaster()
