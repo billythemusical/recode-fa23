@@ -251,7 +251,22 @@ When your group is done, remember to:
 
 Turn in your group's final repo link (or Github Pages link) on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday. Again, <ins>only one person in the group is required to do this.</ins> You will all receive the same grade for the assignment.  
 
-## Module 4 - Working with Graphics & Pixels  
+## Module 4 - Working with Graphics & Pixels 
+
+- In-Class Exercise - Drawing Upside Down
+    - *adapted from [Drawing on the Right Side of the Brain](https://www.drawright.com/band-horizon)*  
+- Lil-gui is dat.gui 
+- [Open Processing](https://openprocessing.org)
+- Clone [Generative Design](http://www.generative-gestaltung.de/2/) repo
+
+📕 **Reading 4 📕 - due before class Thu Oct 19th:**
+
+Watch this [Zach Lieberman talk](https://www.youtube.com/watch?v=bmztlO9_Wvo&ab_channel=AIGAdesign) on his creative coding and art practice and write your response on [this Google Doc](https://docs.google.com/document/d/13qiTdEAFMe6xNV__GAL6qeU2S3t1t2YOecvEUpRSNZ8/edit?usp=sharing).
+
+⏱ *Approx. time to complete: 40-45 minutes* 
+
+More creative coding links if you like:  
+[Takawo - Daily Coding Live Sessions #05 \[ARTSCLOUD\]](https://www.youtube.com/watch?v=kqLCF_L22Fw&list=PLHCwOKNSdmFXg0-c7gOtqmtpzu8JOqIBF&index=5&ab_channel=shunsuketakawo) (Closed Captions can be set to English in the Settings <span style="font-size: 1.2em;">⚙</span>)
 
 ## Module 5  - Coding with Generative AI  
 
