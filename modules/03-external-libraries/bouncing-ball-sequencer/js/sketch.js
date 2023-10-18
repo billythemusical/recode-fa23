@@ -19,7 +19,7 @@ const ball = {
     xSpeed: 6,
     ySpeed: 4,
     col: 'rgb(45, 200, 12)',
-    tempo: 1.0
+    tempo: 2.0
 }
 
 const backgroundColor = {
