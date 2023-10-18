@@ -18,12 +18,12 @@ const ball = {
     size: 50,
     xSpeed: 6,
     ySpeed: 4,
-    col: [45, 200, 12],
+    col: 'rgb(45, 200, 12)',
     tempo: 1.0
 }
 
 const backgroundColor = {
-    col: [100, 20, 200],
+    col: 'rgb(100, 20, 200)',
 }
 
 // A selection of notes from the Mixolydian scale - https://en.wikipedia.org/wiki/Mixolydian_mode

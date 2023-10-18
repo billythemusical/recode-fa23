@@ -4,8 +4,8 @@
 <head>
     <script src="./js/libs/p5.min.js"></script>
     <script src="./js/libs/p5.dom.min.js"></script>
-    <script src="./js/libs/dat.gui.min.js"></script>
-    <script src="./js/libs/tone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.18"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
     <script src="./js/tone-stuff.js"></script>
 
 
@@ -26,6 +26,9 @@
                     <button width="100%" onclick="restartAudio()">
                         Press to restart audio 🔊
                     </button>
+                    <button width="100%" onclick="saveGui()">
+                        Save Settings 🗄
+                    </button>
                 </div>
             </div>
             <div id="gui-container"></div>
@@ -33,7 +36,7 @@
 
         <p class="w" style="font-size: 0.8em; padding: 10px;">This device was built with <a class="w"
                 href="https://tonejs.github.io">Tone.js</a>, <a class="w"
-                href="https://github.com/dataarts/dat.gui">dat.gui</a>, and <a class="w"
+                href="https://lil-gui.georgealways.com/">Lil.gui</a>, and <a class="w"
                 href="https://p5js.org">p5.js</a>.
         </p>
     </div>

@@ -1,53 +1,82 @@
 // A GUI using dat.gui to control ball color and speed, and background color
-const gui = new dat.gui.GUI({ autoPlace: false })
+const gui = new lil.GUI({ autoPlace: false })
 const guiContainer = document.getElementById("gui-container")
 guiContainer.append(gui.domElement)
 
-gui.addFolder('Ball Adjustments') // adds a section with heading
-gui.add(ball, 'xSpeed', 1, 20, 1) // dat.GUI.add takes an object as it's first argument
+const ballAdjustments = gui.addFolder('Ball Adjustments') // adds a section with heading
+ballAdjustments.add(ball, 'xSpeed', 1, 20, 1) // dat.GUI.add takes an object as it's first argument
     .onFinishChange(value => ball.xSpeed = value) // callback on change
-gui.add(ball, 'ySpeed', 0, 20, 1)
+ballAdjustments.add(ball, 'ySpeed', 0, 20, 1)
     .onFinishChange(value => ball.ySpeed = value)
-gui.add(ball, 'tempo', 0.1, 4.0, 0.05)
+ballAdjustments.add(ball, 'tempo', 0.1, 4.0, 0.05)
     .onChange(value => ball.tempo = value)
-gui.addColor(ball, 'col', 0, 255, 1)
+ballAdjustments.addColor(ball, 'col')
     .onChange(value => ball.col = value)
 
-gui.addFolder('Background Color')
-gui.addColor(backgroundColor, 'col', 0, 255, 1)
+const bkgd = gui.addFolder('Background')
+bkgd.addColor(backgroundColor, 'col')
     .onChange(value => backgroundColor.col = value)
 
-gui.addFolder('Synth Controls')
-gui.add({ oscillatorType: 1 }, 'oscillatorType', 1, 4, 1)
+// global variables for tracking osc type and partials
+let oscType = synthParams.oscillatorType
+let oscPartials = synthParams.partials
+const synthControls = gui.addFolder('Synth Parameters')
+synthControls.add(synthParams, 'oscillatorType', ['triangle', 'square', 'sawtooth', 'sine'])
     .onChange(value => {
+        oscType = value
         // from https://tonejs.github.io/docs/14.7.77/PolySynth.html
-        let osc = synthParams.oscillator[value - 1]
-        synth.set({ oscillator: { type: osc } })
+        synth.set({ oscillator: { type: (oscType + oscPartials) } })
     })
-gui.add({ filter: 3000 }, 'filter', 50, 10000, 10)
+synthControls.add(synthParams, 'partials', 0, 32, 1)
+    .onChange(value => {
+        if (value) oscPartials = value
+        else oscPartials = ''
+        synth.set({ oscillator: { type: (oscType + oscPartials) } })
+    })
+
+synthControls.add({ filter: 3000 }, 'filter', 50, 20000, 10)
     .onChange(value => filter.frequency.value = value)
-gui.add(synthParams.envelope, 'attack', 0.001, 2.5, 0.01)
+synthControls.add(synthParams.envelope, 'attack', 0.001, 2.5, 0.01)
     .onChange(value => {
         // from https://tonejs.github.io/docs/14.7.77/PolySynth.html
         synth.set({ envelope: { attack: value } })
     })
-gui.add(synthParams.envelope, 'release', 0.05, 10.0, 0.1)
+synthControls.add(synthParams.envelope, 'release', 0.05, 10.0, 0.1)
     .onChange(value => {
         synth.set({ envelope: { release: value } })
     })
-gui.add({ volume: 0.0 }, 'volume', -25, 0, 0.5)
+synthControls.add({ volume: 0.0 }, 'volume', -25, 0, 0.5)
     .onChange(value => Tone.Master.volume.value = dim + value) // dim from tone-stuff.js
 
-gui.addFolder('Audio Delay Parameters')
-gui.add({ mix: 0.0 }, 'mix', 0.0, 1.0, 0.05)
+const audioDelayParameters = gui.addFolder('Audio Delay Parameters')
+audioDelayParameters.add({ mix: 0.0 }, 'mix', 0.0, 1.0, 0.05)
     .onChange(value => {
         delay.wet.value = value
     })
-gui.add({ delayTime: 1.0 }, 'delayTime', 0.0, 10.0, 0.05)
+audioDelayParameters.add({ delayTime: 1.0 }, 'delayTime', 0.0, 10.0, 0.05)
     .onChange(value => {
         delay.delayTime.value = value
     })
-gui.add({ feedback: 0.0 }, 'feedback', 0.0, 1.0, 0.05)
+audioDelayParameters.add({ feedback: 0.0 }, 'feedback', 0.0, 1.0, 0.05)
     .onChange(value => {
         delay.feedback.value = value
     })
+
+// Add save/load settings
+let preset = {}
+let saveLoad = {
+    savePreset() {
+        preset = gui.save()
+        console.log(preset)
+        loadButton.enable()
+        // localStorage.setItem("BBS", preset)
+    },
+    loadPreset() {
+        gui.load(preset)
+    }
+}
+gui.add(saveLoad, 'savePreset')
+
+
+const loadButton = gui.add(saveLoad, 'loadPreset')
+    .disable();

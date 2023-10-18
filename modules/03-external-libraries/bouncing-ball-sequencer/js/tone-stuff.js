@@ -8,19 +8,15 @@ function restartAudio() {
 }
 
 const synthParams = {
-    oscillator: {
-        0: 'triangle',
-        1: 'sawtooth',
-        2: 'sine',
-        3: 'square',
-    },
+    oscillatorType: 'triangle',
+    partials: 0,
     envelope: {
         attack: 0.001,
         decay: 0.001,
         sustain: 0.3,
         release: 0.3
     },
-    filter: 3000,
+    filter: 3000
 }
 
 // A PolySynth can play multiple notes at once, aka is polyphonic
@@ -33,6 +29,7 @@ synth.connect(filter)
 // An audio feedback delay effect
 const delayParams = {
     delayTime: 0.5,
+    maxDelay: 10.1,
     feedback: 0.0,
     wet: 0.0
 }
