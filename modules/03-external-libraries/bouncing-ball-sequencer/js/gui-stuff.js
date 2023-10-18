@@ -67,9 +67,8 @@ let preset = {}
 let saveLoad = {
     savePreset() {
         preset = gui.save()
-        console.log(preset)
+        console.log(JSON.stringify(preset, null, 2))
         loadButton.enable()
-        // localStorage.setItem("BBS", preset)
     },
     loadPreset() {
         gui.load(preset)
@@ -77,6 +76,6 @@ let saveLoad = {
 }
 gui.add(saveLoad, 'savePreset')
 
-
 const loadButton = gui.add(saveLoad, 'loadPreset')
     .disable();
+
