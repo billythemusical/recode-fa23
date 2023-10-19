@@ -7,7 +7,7 @@ Fall 2023
 [Module 1](#module-1---foundations) - Foundations (HTML / CSS)  
 [Module 2](#module-2---🍦-vanilla--asynchornous-javascript) - Vanilla & Asynchronous Javascript  
 [Module 3](#module-3---working-with-external-libraries) - Working with External Libraries*  
-[Module 4]() - Working with Graphics & Pixels*  
+[Module 4](#module-4---working-with-graphics--pixels) - Working with Graphics & Pixels*  
 [Module 5]() - Coding with Generative AI  
 [Module 6]() - Developing Locally  
 [Module 7]() - Using Git and Github  
@@ -267,6 +267,10 @@ Watch this [Zach Lieberman talk](https://www.youtube.com/watch?v=bmztlO9_Wvo&ab_
 
 More creative coding links if you like:  
 [Takawo - Daily Coding Live Sessions #05 \[ARTSCLOUD\]](https://www.youtube.com/watch?v=kqLCF_L22Fw&list=PLHCwOKNSdmFXg0-c7gOtqmtpzu8JOqIBF&index=5&ab_channel=shunsuketakawo) (Closed Captions can be set to English in the Settings <span style="font-size: 1.2em;">⚙</span>)
+
+📌 **Assignment 4 📌 - due before class on Tue Oct 24th:** 
+
+### [📝 Print & Annotate Code Exercise](./modules/04-pixels/printing-code-exercise.md)
 
 ## Module 5  - Coding with Generative AI  
 
