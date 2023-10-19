@@ -1,0 +1,26 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../../images/bkgd.jpg');
+    font-family: "Young Serif", monospace;
+}
+
+main {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+input {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    font-family: "Young Serif", monospace;
+}
+
+canvas {
+    margin: 10px;
+    border: 20px ridge rgb(140, 50, 205);
+}
