@@ -272,6 +272,13 @@ More creative coding links if you like:
 
 ### [📝 Print & Annotate Code Exercise](./modules/04-pixels/printing-code-exercise.md)
 
+Take a photo(s) of your <ins>printed and hand-annotated</ins> pages and upload them to new Github repo called `04-pixels` and document your process in the README file. This can be a brief write up about:
+- your experience with the exercise and any insight you gained
+- interesting artists, sketches or themes you found on OpenProcessing.org
+- interesting `code snippets`, techniques, or inspirations, etc.
+
+Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday.
+
 ## Module 5  - Coding with Generative AI  
 
 ## Module 6 - Developing Locally  
