@@ -288,7 +288,12 @@ Hello [LLM's](https://www.youtube.com/watch?v=xmdR0Jvm2EY), goodbye homework!
 - Create OpenAI Account if you haven't already
 - [ChatGPT login](https://chat.openai.com/) and [OpenAI API Developer Login](https://platform.openai.com/) 
 - ChatGPT 3.5 turbo is free, fast, and great at coding
+- ChatGPT 4 is 'better' and can process images, drawings
+
+Issues
 - The Problem of Alignment
+    - What is alignment?
+- Ethics
 - Understanding Jailbreaking [1](https://x.com/goodside/status/1684803086869553152?s=20), [2](https://x.com/sama/status/1682826943312326659?s=20)
 
 Basic Parameters 
@@ -306,13 +311,15 @@ Strategies for code
 - "Let's go step by step"
 - The more specific you can be, the better
 - ELI5... or High School Senior, Intermediate-Level Programmer, etc.
+    -   Explaining [TweetCode](https://twitter.com/hashtag/Processing?src=hashtag_click) is fun
 - Trying custom prompts
+    - [Example](https://twitter.com/kentcdodds/status/1702771901175836700?s=46) from a Typescript programmer 
 - Role Playing
 - Feedback loop
 
 Best Practices
 - Save helpful scripts
-- <ins>Don't</ins> TRUST <ins>and</ins> VERIFY
+- <ins>Don't</ins> TRUST <ins>and</ins> [VERIFY](https://twitter.com/svpino/status/1711736723179282744?s=46)
 - Ask for "fully commented code"
 - [Stay positive](https://twitter.com/nominus9/status/1693428898409619613?s=46)
 - Specify platform, 'I am on MacOS Ventura'
