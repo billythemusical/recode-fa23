@@ -8,7 +8,7 @@ Fall 2023
 [Module 2](#module-2---🍦-vanilla--asynchornous-javascript) - Vanilla & Asynchronous Javascript  
 [Module 3](#module-3---working-with-external-libraries) - Working with External Libraries*  
 [Module 4](#module-4---working-with-graphics--pixels) - Working with Graphics & Pixels*  
-[Module 5]() - Coding with Generative AI  
+[Module 5](#module-5---coding-with-generative-ai) - Coding with Generative AI  
 [Module 6]() - Developing Locally  
 [Module 7]() - Using Git and Github  
 [Module 8]() - Working outside the browser*  
@@ -217,7 +217,7 @@ Fun external libraries
 - Q & Alyea  
 
 
-📕 **Reading 3 📕 - due before EOD <ins>Fri Oct 13th at 11:59pm</ins>:**
+### 📕 **Reading 3 📕 - due before EOD <ins>Fri Oct 13th at 11:59pm</ins>:**
 
 We will be working in randomly chosen groups for these Assignments. Pick an an open source library that you would like to use for Assignment 3 below and share the name of the library and CDN link in the "link to assignment" space on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16). As long as one of you turns in the form, it will count for all in the group.
 
@@ -231,7 +231,7 @@ Here are some you can choose from, but don't feel limited to these!
 - [ZzFX Sound](https://killedbyapixel.github.io/ZzFX/)  
 - ...or one of the many p5.js [contributor libraries](https://p5js.org/libraries/#:~:text=A%20p5.js%20library%20can,of%20the%20p5.js%20community)!
 
-📌 **Assignment 3 - Working With External Libraries 📌 - due before class on Tue Oct 17th:** 
+### 📌 **Assignment 3 - Working With External Libraries 📌 - due before class on Tue Oct 17th:** 
 
 Now to spread your wings and fly out into the world of open source on your own! <ins>Only one person in your group needs to create the repo to turn in the assignment, but all should contribute to the work</ins>:  
 
@@ -251,7 +251,7 @@ When your group is done, remember to:
 
 Turn in your group's final repo link (or Github Pages link) on [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday. Again, <ins>only one person in the group is required to do this.</ins> You will all receive the same grade for the assignment.  
 
-## Module 4 - Working with Graphics & Pixels 
+# Module 4 - Working with Graphics & Pixels 
 
 - In-Class Exercise - Drawing Upside Down
     - *adapted from [Drawing on the Right Side of the Brain](https://www.drawright.com/band-horizon)*  
@@ -281,7 +281,53 @@ Take a photo(s) of your <ins>printed and hand-annotated</ins> pages and upload t
 
 Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday.
 
-## Module 5  - Coding with Generative AI  
+# Module 5  - Coding with Generative AI  
+
+Hello [LLM's](https://www.youtube.com/watch?v=xmdR0Jvm2EY), goodbye homework!
+- OpenAI
+- Create OpenAI Account if you haven't already
+- [ChatGPT login](https://chat.openai.com/) and [OpenAI API Developer Login](https://platform.openai.com/) 
+- ChatGPT 3.5 turbo is free, fast, and great at coding
+- The Problem of Alignment
+- Understanding Jailbreaking [1](https://x.com/goodside/status/1684803086869553152?s=20), [2](https://x.com/sama/status/1682826943312326659?s=20)
+
+Basic Parameters 
+- Prompt/Seed Text
+    - Initial text you provide to the model, "starts the conversation"
+- Tokens
+    - Limited based on the API
+    - How the text is broken down, think syllables or building blocks
+- Temperature
+    - Controls the randomness of the output
+    - Higher is more random/diverse, lower is more probable/consistent
+
+Strategies for code
+- Prompting vs. Zero Shot/Single Shot
+- "Let's go step by step"
+- The more specific you can be, the better
+- ELI5... or High School Senior, Intermediate-Level Programmer, etc.
+- Trying custom prompts
+- Role Playing
+- Feedback loop
+
+Best Practices
+- Save helpful scripts
+- <ins>Don't</ins> TRUST <ins>and</ins> VERIFY
+- Ask for "fully commented code"
+- [Stay positive](https://twitter.com/nominus9/status/1693428898409619613?s=46)
+- Specify platform, 'I am on MacOS Ventura'
+
+### 📕 Reading 5 📕 - Intro Command Line due on Thursday, Oct 26th
+
+- Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/). 
+- Install any required software (Mac or Windows) and carefully follow along with the code examples. 
+- Feel free to use Alice In Wonderland [alice.txt](./alice.txt) and this list of [names.txt](./names.txt) if you need text files to manipulate. Just make sure you change the commands from the tutorial to match your file names.
+
+#### Submitting your work 
+
+- Make a new repo **05-reading** and add any new files created from the tutorial. Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday.
+
+⏱ *Approx. time to complete:* 1.5 hours 
 
 ## Module 6 - Developing Locally  
 
