@@ -294,28 +294,35 @@ Issues
 - The Problem of Alignment
     - What is alignment?
 - Ethics
-- Understanding Jailbreaking [1](https://x.com/goodside/status/1684803086869553152?s=20), [2](https://x.com/sama/status/1682826943312326659?s=20)
+- Understanding Jailbreaking 
+    - Examples: [1](https://x.com/goodside/status/1684803086869553152?s=20), [2](https://twitter.com/andyzou_jiaming/status/1684766170766004224)
 
-Basic Parameters 
+Basic Terms/Parameters 
 - Prompt/Seed Text
     - Initial text you provide to the model, "starts the conversation"
+- Context
+    - The model's ability to recall what you have previously said, including the prompt, aka the "memory" of the conversation
+    - Limited based on the capabilities of the current model
 - Tokens
+    - How the LLM breaks the input text down into chunks, think syllables or building blocks
     - Limited based on the API
-    - How the text is broken down, think syllables or building blocks
 - Temperature
     - Controls the randomness of the output
     - Higher is more random/diverse, lower is more probable/consistent
 
-Strategies for code
+Strategies for Prompting
 - Prompting vs. Zero Shot/Single Shot
-- "Let's go step by step"
-- The more specific you can be, the better
+    - The more specific you can be, the better
+- "Let's go step by step", although this has been more integrated into the current models lately
 - ELI5... or High School Senior, Intermediate-Level Programmer, etc.
-    -   Explaining [TweetCode](https://twitter.com/hashtag/Processing?src=hashtag_click) is fun
+    - [In-class Example](https://chat.openai.com/share/0c9974e0-d89e-42a5-a072-9097559a4d75) explaining [TweetCode](https://twitter.com/hashtag/Processing?src=hashtag_click) with the resulting [p5.js sketch]()
 - Trying custom prompts
-    - [Example](https://twitter.com/kentcdodds/status/1702771901175836700?s=46) from a Typescript programmer 
+    - [Example](https://x.com/sama/status/1682826943312326659?s=20) from OpenAI founder Sam Altman
+    - [Example](https://twitter.com/kentcdodds/status/1702771901175836700?s=46) from a Typescript programmer
 - Role Playing
+    - "Pretend you are a programming expert with decades of experience. How would you write a web server with the utmost security in mind using Node.js and Express?"
 - Feedback loop
+    - "I got the following error(s) when I ran the code you suggested: \<paste the errors below\>"
 
 Best Practices
 - Save helpful scripts
@@ -326,7 +333,7 @@ Best Practices
 
 ### 📕 Reading 5 📕 - Intro Command Line due on Thursday, Oct 26th
 
-- Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/). 
+- Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/) Tutorial``. 
 - Install any required software (Mac or Windows) and carefully follow along with the code examples. 
 - Feel free to use Alice In Wonderland [alice.txt](./alice.txt) and this list of [names.txt](./names.txt) if you need text files to manipulate. Just make sure you change the commands from the tutorial to match your file names.
 
