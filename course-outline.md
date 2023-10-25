@@ -315,7 +315,7 @@ Strategies for Prompting
     - The more specific you can be, the better
 - "Let's go step by step", although this has been more integrated into the current models lately
 - ELI5... or High School Senior, Intermediate-Level Programmer, etc.
-    - [In-class Example](https://chat.openai.com/share/0c9974e0-d89e-42a5-a072-9097559a4d75) explaining [TweetCode](https://twitter.com/hashtag/Processing?src=hashtag_click) with the resulting [p5.js sketch]()
+    - [In-class Example](https://chat.openai.com/share/0c9974e0-d89e-42a5-a072-9097559a4d75) explaining [TweetCode](https://twitter.com/hashtag/Processing?src=hashtag_click) with the resulting [p5.js sketch](https://editor.p5js.org/billythemusical/sketches/Zk_f0juMr)
 - Trying custom prompts
     - [Example](https://x.com/sama/status/1682826943312326659?s=20) from OpenAI founder Sam Altman
     - [Example](https://twitter.com/kentcdodds/status/1702771901175836700?s=46) from a Typescript programmer
@@ -336,6 +336,8 @@ Best Practices
 - Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/) Tutorial``. 
 - Install any required software (Mac or Windows) and carefully follow along with the code examples. 
 - Feel free to use Alice In Wonderland [alice.txt](./alice.txt) and this list of [names.txt](./names.txt) if you need text files to manipulate. Just make sure you change the commands from the tutorial to match your file names.
+
+>Here is a helpful list of [Basic Linux Commands](./basic_linux_commands.md) for your reference as well.
 
 #### Submitting your work 
 
