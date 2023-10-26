@@ -354,6 +354,8 @@ Best Practices
     - check your installation with `$ node -v`
 - ...or [Updating](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/) Node.js
 - Your first Node.js program(s)
+    - [developing locally](./modules/06-developing-locally/developing-locally.md)
+    - [working with cron](./modules/06-developing-locally/cron.md)
     - more [node examples](./modules/06-developing-locally/node-examples/) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
 
 
