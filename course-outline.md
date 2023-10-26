@@ -347,6 +347,9 @@ Best Practices
 
 ⏱ *Approx. time to complete:* 1.5 hours 
 
+
+## Module 6 - Developing Locally  
+
 ### Node.js
 
 - What is [Node.js](https://nodejs.org/en/about)?
@@ -356,10 +359,7 @@ Best Practices
 - Your first Node.js program(s)
     - [developing locally](./modules/06-developing-locally/developing-locally.md)
     - [working with cron](./modules/06-developing-locally/cron.md)
-    - more [node examples](./modules/06-developing-locally/node-examples/) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
-
-
-## Module 6 - Developing Locally  
+    - more [node examples](https://github.com/billythemusical/recode-fa23/tree/main/modules/06-developing-locally/node-examples) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
 
 ## Module 7 - Using Git and Github  
 
