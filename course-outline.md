@@ -339,7 +339,7 @@ Best Practices
 - Install any required software (Mac or Windows) and carefully follow along with the code examples. 
 - Feel free to use Alice In Wonderland [alice.txt](./alice.txt) and this list of [names.txt](./names.txt) if you need text files to manipulate. Just make sure you change the commands from the tutorial to match your file names.
 
->Here is a helpful list of [Basic Linux Commands](./basic_linux_commands.md) for your reference as well.
+>Here is a helpful list of [Basic Linux Commands](./modules/06-developing-locally/basic_linux_commands.md) for your reference as well.
 
 #### Submitting your work 
 
