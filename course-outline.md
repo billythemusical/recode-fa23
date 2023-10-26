@@ -353,7 +353,8 @@ Best Practices
 - [Installing](https://nodejs.org/en/download) Node.js 
     - check your installation with `$ node -v`
 - ...or [Updating](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/) Node.js
-- Your first Node.js program
+- Your first Node.js program(s)
+    - more [node examples](./modules/06-developing-locally/node-examples/) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
 
 
 ## Module 6 - Developing Locally  
