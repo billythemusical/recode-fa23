@@ -92,3 +92,4 @@ ls dir | grep file # outputs file name if file is in directory
 mv 'Screen\ Shot*.png' ~/.Trash # move all screen shots in the current directory to the trash (on Mac)
 ```
 
+

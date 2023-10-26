@@ -331,9 +331,11 @@ Best Practices
 - [Stay positive](https://twitter.com/nominus9/status/1693428898409619613?s=46)
 - Specify platform, 'I am on MacOS Ventura'
 
+>Share your own LLM or AI tips, tricks, and resources [here](https://docs.google.com/spreadsheets/d/1yW7pkUtGTup6b1TVjXyCSax2t4_uHNdNfDEgOSCN6QE/edit?usp=sharing).
+
 ### 📕 Reading 5 📕 - Intro Command Line due on Thursday, Oct 26th
 
-- Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/) Tutorial``. 
+- Read Sam Levine's [Intro to the Command Line](https://scrapism.lav.io/intro-to-the-command-line/) Tutorial. 
 - Install any required software (Mac or Windows) and carefully follow along with the code examples. 
 - Feel free to use Alice In Wonderland [alice.txt](./alice.txt) and this list of [names.txt](./names.txt) if you need text files to manipulate. Just make sure you change the commands from the tutorial to match your file names.
 
@@ -344,6 +346,15 @@ Best Practices
 - Make a new repo **05-reading** and add any new files created from the tutorial. Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Tuesday.
 
 ⏱ *Approx. time to complete:* 1.5 hours 
+
+### Node.js
+
+- What is [Node.js](https://nodejs.org/en/about)?
+- [Installing](https://nodejs.org/en/download) Node.js 
+    - check your installation with `$ node -v`
+- ...or [Updating](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/) Node.js
+- Your first Node.js program
+
 
 ## Module 6 - Developing Locally  
 
