@@ -364,6 +364,7 @@ Best Practices
 - Persistence with [pm2](https://www.npmjs.com/package/pm2)
 - Using [Pushover](pushover.net) to send Mobile Notifications
 - [Digital Ocean](https://m.do.co/c/489f0e4c7d15) to run our code remotely (always on)
+    - [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04)
 
 ### Setting up a remote computer with Digital Ocean
 
