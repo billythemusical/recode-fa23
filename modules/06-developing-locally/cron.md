@@ -51,27 +51,34 @@ cron.schedule('*/10 * * * * *', callback)
 
 For more options, let's check out the [`node-cron`](https://www.npmjs.com/package/node-cron) documentation. What are some uses for Cron that come to mind? 
 
-## Sending an iOS notification 
 
-You can sign up for a free [Pushover](https://pushover.net/signup) account and send iOS notifications to their companion app using Node.js.  I think it's free for 30 days and then a $4.99 one-time purchase after that.
+### Persistance with pm2
 
-Once you have an account and a USERKEY, you have to [create an application](https://pushover.net/apps/build) which will give you an APPTOKEN.  
+To have the app persist beyond the current terminal session, you must use a process manager like `pm2`. 
 
-Once you have those, I like to use the [`node-pushover`](https://www.npmjs.com/package/node-pushover) package to send a message.  You can install it like so:
-```bash
-npm install node-pushover
+It is recommended that you install "globally" because it is often re-used when developing various projects. To do so, you can add the `--global` or `-g` flag like so:
+```js 
+npm install pm2 --global
 ```
-You can send a message like so. And remember, we use the `.env` file and the `dotenv` package so we don't save our keys and tokens in our code.
+If you get `EEACCESS` errors or the like, you may have to run this command with `sudo` first, denoting that you are a `Super User` who can `Do`.
 ```js
-require('dotenv').config()
-
-var Pushover = require('node-pushover');
-var push = new Pushover({
-	token: process.env.APPTOKEN,
-	user: process.env.USERKEY
-});
-
-push.send("Some title", "Omg iOS notificaysh!");
+sudo npm install pm2 --global
 ```
-We can combine this code with our Cron code and get to notifyin'!   
+To launch the app with `pm2`, type:
+```js
+pm2 start app.js
+```
+To check the status of pm2, where you will see the name of your app and its online/offline status, type:
+```js
+pm2 status
+``` 
+You can stop the app by typing:
+```js
+pm2 stop // and your app name
+```
+For example, if my app was named "app", I would type `pm2 stop app`.
 
+### Persistance with counter
+There is an [example](./app-with-counter.js) here with an index variable that acts as a counter which you could use to cycle through a list of items that you wanted to send in a sequence (or randomly).
+
+But... what's a smarter way?  Because the index will reset when the script is restarted, say, after an error.  You could explore saving the index value in a file on the computer, so it would persist even if the app crashed and restarted (check out the `fs` package and [this StackOverflow discussion](https://stackoverflow.com/questions/22795806/writing-data-to-text-file-in-node-js#:~:text=6,with%20the%20filesystem%3A)).  You could also take advantage of the date or day of the week as they are persistent values.
