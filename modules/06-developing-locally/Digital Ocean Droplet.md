@@ -1,5 +1,7 @@
 # Digital Ocean Droplets
 
+[![Referral Link](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=489f0e4c7d15&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 ## Setting up a Droplet
 
 #### Via Command Line 
