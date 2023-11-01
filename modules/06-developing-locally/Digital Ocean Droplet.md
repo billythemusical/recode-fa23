@@ -1,6 +1,10 @@
 # Digital Ocean Droplets
 
-[![Referral Link](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=489f0e4c7d15&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+[![Student Referral Link](https://www.digitalocean.com/github-students)
+
+#### Why are we using Digital Ocean, you might ask? 
+
+Well, other web apps like Glitch, Heroku and Replit do not allow you full control over your server applications or require you to "boost" them to keep them accessible 24/7. Digital Ocean droplets give you this control straight away. It's a bit less user-friendly up front, but the tools are much more robust tools and teach you valuable lessons about how to run remote machines.
 
 ## Setting up a Droplet
 

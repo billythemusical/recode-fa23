@@ -360,10 +360,10 @@ Best Practices
     - [developing locally](./modules/06-developing-locally/developing-locally.md)
     - [working with cron](./modules/06-developing-locally/cron.md)
     - more [node examples](https://github.com/billythemusical/recode-fa23/tree/main/modules/06-developing-locally/node-examples) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
-- Using [Cron](https://www.npmjs.com/package/node-cron) to schedule things
+- Using [Cron](./modules/06-developing-locally/cron.md) to schedule things
 - Persistence with [pm2](https://www.npmjs.com/package/pm2)
-- Using [Pushover](pushover.net) to send Mobile Notifications
-- [Digital Ocean](https://m.do.co/c/489f0e4c7d15) to run our code remotely (always on)
+- Using [Pushover](./modules/06-developing-locally/notify-app/notify-app.md) to send Mobile Notifications
+- [Digital Ocean](./modules/06-developing-locally/Digital Ocean Droplet.md) to run our code remotely (always on)
     - [Initial Server Setup](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04)
 
 ### Setting up a remote computer with Digital Ocean
