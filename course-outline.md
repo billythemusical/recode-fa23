@@ -368,6 +368,11 @@ Best Practices
 
 ### Setting up a remote computer with Digital Ocean
 
+[INSTRUCTIONS HERE](./modules/06-developing-locally/Digital Ocean Droplet.md)
+
+Tired of the look of Git Bash? 
+- Take a [crack at customizing](https://dev.to/blikoor/customize-git-bash-shell-498l) it!
+
 ## Module 7 - Using Git and Github  
 
 ## Module 8 - Working outside the browser  
