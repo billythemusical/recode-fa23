@@ -362,17 +362,46 @@ Best Practices
     - more [node examples](https://github.com/billythemusical/recode-fa23/tree/main/modules/06-developing-locally/node-examples) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
 - Using [Cron](./modules/06-developing-locally/cron.md) to schedule things
 
-DAY 2
+### 📕 Reading 6 📕 - Due before class on Thu Nov 2nd
 
+Create a Digital Ocean account - [Referral Link](https://www.digitalocean.com/github-students). I'll be loose on this one due to late notice.
+
+### Node.js (cont)
 - Using [Pushover](./modules/06-developing-locally/notify-app/notify-app.md) to send Mobile Notifications
 - Persistence with [pm2](https://www.npmjs.com/package/pm2)
 
-### Setting up a remote computer with Digital Ocean
+Setting up a remote computer with Digital Ocean - [INSTRUCTIONS HERE](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md)
 
-[INSTRUCTIONS HERE](./modules/06-developing-locally/Digital Ocean Droplet.md)
+Tired of the look of Git Bash? Take a [crack at customizing](https://dev.to/blikoor/customize-git-bash-shell-498l) it!
 
-Tired of the look of Git Bash? 
-- Take a [crack at customizing](https://dev.to/blikoor/customize-git-bash-shell-498l) it!
+### 📌 Assignment 6 📌, due before class on Thu Nov 9th:  
+Get the **Notify App** running that we built in class using `pm2`. Let the app run in the background throughout your week and experiment with different scenarios like the following:
+- Send yourself a reminder in the mornings before you start your day.
+- Send yourself a reminder to do an errand at some point in your day.
+- Send yourself a reminder to stand and stretch while doing homework.
+- Devise your own reminder(s)!
+
+
+
+#### Submitting your work 
+
+- Make a new `06-assignment` public repo and include the code that you used in the final work. 
+- Make sure the code is neat and organized. If there are multiple iterations of the code, keep them clearly labeled and explained in the README.
+- Document your ideation process on your repo's **README** page. If you used tools like ChatGPT or Copilot, explain how and where you used them and share links to the chat conversations so others can learn from these tools as well.
+- Consider including things like the following: 
+    - screenshots of the app working on your phone
+    - errors you encountered along the way
+    - various iterations of the project
+
+- Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before class on Thursday, Nov 9th.
+
+⏱ *Approx. time to complete: 5 hours* 
+
+>Here is some great work from last year's class for inspiration:
+>- [Yuchi's Journey App](https://june-bee-recode-2022.glitch.me/hw6.html) by June Bee
+>- [Morning Weather Forecast](https://wp.nyu.edu/drew/morning-weather-forecast/) by Drew Brown
+>
+
 
 ## Module 7 - Using Git and Github  
 
