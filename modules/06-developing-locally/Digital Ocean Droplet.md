@@ -45,20 +45,13 @@ The output of this command will be a lengthy JSON object:
 ```
 >Here's the [full output](droplet-response.json).
 
-### Setting the password
-
-Since we created our Droplet via the Command Line (instead of using the web interface), we'll have to set our password by re-setting it. This is easy to do. 
-1) Just go to your Droplets.
-2) Click on the name of your newly created Droplet. 
-3) Choose Access from the tabs on the left.
-4) Choose "Reset root password"
-5) Check your email for a new password.
+You will then get an email with the details of your Droplet including the **IP address** and **password**. You will need the password when you log in to the Droplet via the online console/terminal.
 
 ### Accessing our Droplet
 
 For now, we will use the Droplet Console that Digital Ocean provides. This saves us from having to set up SSH, which we will do later when we get into running our own web servers. 
 
-Click on **Launch Droplet Console**. You'll then be prompted to put in your new password. 
+Click on **Launch Droplet Console**. You'll then be prompted to put in your Droplet password that was emailed to you. And then you will be asked to create a new password.
 
 ### Using our Droplet
 
