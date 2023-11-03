@@ -369,13 +369,17 @@ Create a Digital Ocean account - [Referral Link](https://www.digitalocean.com/gi
 ### Node.js (cont)
 - Using [Pushover](./modules/06-developing-locally/notify-app/notify-app.md) to send Mobile Notifications
 - Persistence with [pm2](https://github.com/Unitech/pm2)
+- [Digital Ocean Droplets](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md)
+- working with [`.env` files](./modules/06-developing-locally/dotenv.md)
 
 Setting up a remote computer, aka a "droplet", with Digital Ocean - [INSTRUCTIONS HERE](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md)
 
 Tired of the look of Git Bash? Take a [crack at customizing](https://dev.to/blikoor/customize-git-bash-shell-498l) it!
 
 ### 📌 Assignment 6 📌, due before class on ~~Thu Nov 9th~~ Tue Nov 14th:  
-Get the **Notify App** that we built in class running on your Digital Ocean Droplet using `pm2`. Let the app run in the background throughout your week and experiment with different scenarios like the following:
+Get the **Notify App** that we built in class running on your Digital Ocean Droplet using `pm2`. Again, the instructions are all located [here](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md).
+
+Let the app run in the background throughout your week and experiment with different scenarios like the following:
 - Send yourself a reminder in the mornings before you start your day.
 - Send yourself a reminder to do an errand at some point in your day.
 - Send yourself a reminder to stand and stretch while doing homework.
