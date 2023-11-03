@@ -4,13 +4,11 @@
 
 If you haven't already, create a free account over at [Digital Ocean](digitalocean.com). 
 
-They regularly give away $200 in free credits to students - [Referral Link](https://www.digitalocean.com/github-students). You'll have to put down a valid payment method first, but there's no need to worry. They're a totally legit company that I have used for years. 👍🏼
+They regularly give away $200 in free credits and have additional features available to students - [Referral Link](https://www.digitalocean.com/github-students). You'll have to put down a valid payment method first, but there's no need to worry. They're a totally legit company that I have used for years. 👍🏼
 
 ## Droplets
 
 A droplet is a remote computer or virtual machine (VM for short). It runs in the cloud and has access to the internet. Theirs run on an OS called Ubuntu which is a Linux Operating system. Save some minor differences, it will behave much like the Unix (Mac) and Git Bash (Windows) terminals we have been using. 
-
-It may or may not have Node.js and `npm` pre-installed. Just type `node -v` to check. If not, it will usually give instructions like `apt install nodejs` or something similar... `apt` is the `npm` of Ubuntu.
 
 #### Why are we using Digital Ocean, you might ask? 
 
@@ -20,13 +18,19 @@ Well, other web apps like Glitch, Heroku and Replit do not allow you full contro
 
 #### Via Command Line 
 
-You'll first need to generate a new personal access token. Go [here]((https://cloud.digitalocean.com/account/api/tokens/), click Generate, and make sure that the **Write** box is checked ☑️.
+You'll first need to generate a new personal access token. Go to the API tab in your console [here]((https://cloud.digitalocean.com/account/api/tokens/), click **Generate**, and make sure that the **Write** box is checked ☑️.
 
 ![Digital Ocean Create New Personal Access Token](../../images/new-personal-access-token.png)
 
-Copy the token and save it as a local environment variable using the `export` command like so: `export TOKEN="<your API token here>"` where `<your API token here>` is the API token that you just created.
+Copy the token and be sure not to lose it for the next little bit cause they won't show it to you again. 
 
-Now when you run the lengthy `curl` command below (just copy/paste the command into your terminal and hit ENTER), the `TOKEN` variable will be included from the environment using the special `$` syntax, i.e. `$TOKEN`.
+Now, we will use the `export` command in our local terminal like so: `export TOKEN="<your API token here>"` where `<your API token here>` is the API token that you just created. This will create a local environment variable that we will call in the next command we run below. 
+
+>[Read more about local environment variables](environment-variables.md).
+
+Now we will create the droplet via a `curl` command. `curl` is a way to run `http` requests from the command line.
+
+When we run this lengthy `curl` command below (just copy/paste the command into your terminal and hit ENTER), the `TOKEN` variable with our API key will be included from the environment, using the special `$` syntax, i.e. `$TOKEN`.
 
 ```bash
 curl -X POST -H 'Content-Type: application/json' \
@@ -39,13 +43,15 @@ curl -X POST -H 'Content-Type: application/json' \
     "https://api.digitalocean.com/v2/droplets"
 ```
 
-The output of this command will be a lengthy JSON object:
+The output of this command, if successful, will be a lengthy JSON object:
 ```bash
 {"droplet":{"id":382884684,"name":"recode","memory":512,"vcpus":1, ...
 ```
 >Here's the [full output](droplet-response.json).
 
-You will then get an email with the details of your Droplet including the **IP address** and **password**. You will need the password when you log in to the Droplet via the online console/terminal.
+If there is an error, check that your API key is correct. You can do this by typing `printenv | grep TOKEN` which will tell you the value of the `TOKEN` variable. If that does not match, reassign the `TOKEN` variable again, i.e. `export TOKEN='<your api token here>'`.
+
+You will then get an email with the details of your Droplet including the **IP address** and **password**. You will need the password when you log in to the Droplet for the first time via the online console/terminal.
 
 ### Accessing our Droplet
 
@@ -55,34 +61,52 @@ Click on **Launch Droplet Console**. You'll then be prompted to put in your Drop
 
 ### Using our Droplet
 
-#### pm2
-
-First we'll need to install `pm2` in our Droplet globally, like we did on our local machine. 
-
+We'll need to install Node.js and npm straight away. For this, we'll use `apt`. You can think of `apt` as just the `npm` for Ubuntu. If you get any pop-ups, you can hit enter or type 'Y' for yes.
+```bash
+apt install nodejs
+```
+... and then.
+```bash
+apt install npm
+```
+Then install `pm2` globally, like we did on our local machine. 
 ```bash
 npm install -g pm2
 ```
 
+### Moving local code to your Droplet
+
+Before you commit your local changes using Github Deskopt, you'll want to first make sure you don't commit your `.env` file, which has your Pushover API tokens, to Github. We do this with the `.gitignore` file.
+
+Make sure you have a `.gitignore` file in the folder with your code and that is has the `.env` file listed. Here is an example [`.gitignore`](https://github.com/billythemusical/notify-app/blob/main/.gitignore) file from the `notify-app` [example repo](https://github.com/billythemusical/notify-app).
+
+If done properly, the `.env` file will be grayed out in VS Code. *Remember to save your .gitignore file for the changes to take effect.*
+
+![Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file.](../../images/env-gray.png)
+
+Once that is taken care of, commit your local changes and push them to your Github repo. Then you can open this repo on Github and use the URL in the next step when we **clone** the repository in our droplet using the command line.
+
+>The repo you are working with must be **PUBLIC** in order to be cloned in the next step!
+
 #### Git clone
 
-Now we'll have to get our code onto this mysterious remote machine, hidden deep within the bellows of a server farm, somewhere in New York State... 
+Even though the droplet is connected to the web, we can't use a web browser or a desktop app like Github Desktop to get our code onto it. But we can use `git` as it is already installed. 
 
-Luckily for us, Git is also installed on this machine and the `git clone` command will clone any repository that we provide a URL as the next argument:
+To clone a repo from the command line, we can use the `git clone` and provide a URL as the next argument like so:
 
 ```bash
-git clone https://github.com/billythemusical/notify-app
+git clone https://github.com/username/repo
 ```
+... where **username** and **repo** in the URL are replaced by your username and the repo name you want to clone. So making the proper substitutions in the URL, clone the repo to your droplet using the command above.
 
-Once the repo is cloned, do the following: 
+When you clone a repo, a new folder is made with the name of the repo. You can see proof of this by running the `ls` command and seeing the name of your repo.
 
-1) `cd` into the repo
+Then do the following in your droplet: 
+
+1) `cd` into the new repo folder
 2) `npm install` the dependencies
-3) Add your own `.env` file with the following credentials:
-```bash
-APP_TOKEN=""
-USERKEY=""
-```
-4) Start the app with `pm2 start notify.js`
+3) Add a `.env` file that matches your local `.env` file
+4) Start the app with `pm2 start` and the script name you were working with.
 
 #### Managing the pm2 process
 
@@ -90,12 +114,16 @@ Remember that `pm2` will remove the `.js` from your app name by default.
 
 You can check the status of the all apps at any time by typing:
 `pm2 status`
-To check the logs, type (errors are in red):
-`pm2 log`
 To stop or restart an app, type:
 `pm2 stop <app name>` or `pm2 restart <app name>`
 To remove an app from `pm2`, type:
 `pm2 delete <app name>`
+To check the logs, type (errors are in red):
+`pm2 logs`
+For a real-time monitoring, try:
+`pm2 monit`
+
+![a screenshot of the pm2 monitoring window](../../images/pm2-monit.png)
 
 #### Making Changes
 
@@ -103,9 +131,22 @@ To make changes to the app, you have to take a few things into consideration. Fi
 
 The process should go as follows:
 
-1) Make changes, test, and debug on your local machine first
-2) Commit and push the working code to Github
-3) Go to your Droplet's repo and `git pull` the get the new changes
-4) `pm2 restart <app name>` where `<app name>` is the name of your app
+1) ON YOUR LOCAL MACHINE: 
+    - Make changes 
+    - Test
+    - Debug
+    - Commit and push the working code to Github
+2) ON YOUR DROPLET:
+    - `cd` into the repo
+    - `git pull` to get the new changes
+    - `pm2 restart <app name>` where `<app name>` is the name of your app
 
-We always follow this process - develop locally, push to remote -  because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us.
+>We always follow this process - develop locally / pull remotely - because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us!
+
+#### Deactivating or Deleting a Droplet
+
+Droplets can be deactivated or deleted at any time. Deactivating is helpful if you have a runaway process or if the droplet is under attack 😱. *Droplets will still accrue charges though if deactivated.* Deactivating a droplet will maintain all of its files and configurations while deleting it will erase it from existence entirely (and cease to charge your account). 
+
+To deactivate the droplet, simply toggle the **ON** switch in the upper right of the droplet console. To delete the droplet, click on "Destroy" from the options on the left and proceed with the instructions. 
+
+![The Digital Ocean droplet console, featuring the deactivation toggle switch and the Destroy menu tab.](../../images/droplet-console-deactivate-delete.jpg)

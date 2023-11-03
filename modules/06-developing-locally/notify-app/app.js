@@ -3,7 +3,7 @@ require('dotenv').config()
 var cron = require('node-cron')
 var Pushover = require('node-pushover')
 
-cron.schedule('*/5 * * * * *', notify)
+cron.schedule('*/1 * * * * *', notify)
 
 var push = new Pushover({
     token: process.env.APP_TOKEN,
@@ -11,7 +11,7 @@ var push = new Pushover({
 })
 
 function notify() {
-    push.send("Test Subject", "My message", handleErrors)
+    push.send("Hiiii", "My message", handleErrors)
 }
 
 function handleErrors(error, response) {

@@ -9,7 +9,7 @@ Fall 2023
 [Module 3](#module-3---working-with-external-libraries) - Working with External Libraries*  
 [Module 4](#module-4---working-with-graphics--pixels) - Working with Graphics & Pixels*  
 [Module 5](#module-5---coding-with-generative-ai) - Coding with Generative AI  
-[Module 6]() - Developing Locally  
+[Module 6](#module-6---developing-locally) - Developing Locally  
 [Module 7]() - Using Git and Github  
 [Module 8]() - Working outside the browser*  
 [Module 9]() - Progressive Web Apps*  
@@ -348,17 +348,17 @@ Best Practices
 ⏱ *Approx. time to complete:* 1.5 hours 
 
 
-## Module 6 - Developing Locally  
+# Module 6 - Developing Locally  
 
 ### Node.js
 
 - What is [Node.js](https://nodejs.org/en/about)?
 - [Installing](https://nodejs.org/en/download) Node.js 
     - check your installation with `$ node -v`
-- ...or [Updating](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/) Node.js
+    - anything greater than **v18** is good for our purposes
+- ~~...or [Updating](https://www.freecodecamp.org/news/how-to-update-node-and-npm-to-the-latest-version/) Node.js~~
 - Your first Node.js program(s)
     - [developing locally](./modules/06-developing-locally/developing-locally.md)
-    - [working with cron](./modules/06-developing-locally/cron.md)
     - more [node examples](https://github.com/billythemusical/recode-fa23/tree/main/modules/06-developing-locally/node-examples) borrowed from the wonderful ITP/IMA prof [Allison Parrish](https://www.decontextualize.com/)
 - Using [Cron](./modules/06-developing-locally/cron.md) to schedule things
 
@@ -368,19 +368,18 @@ Create a Digital Ocean account - [Referral Link](https://www.digitalocean.com/gi
 
 ### Node.js (cont)
 - Using [Pushover](./modules/06-developing-locally/notify-app/notify-app.md) to send Mobile Notifications
-- Persistence with [pm2](https://www.npmjs.com/package/pm2)
+- Persistence with [pm2](https://github.com/Unitech/pm2)
 
-Setting up a remote computer with Digital Ocean - [INSTRUCTIONS HERE](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md)
+Setting up a remote computer, aka a "droplet", with Digital Ocean - [INSTRUCTIONS HERE](./modules/06-developing-locally/Digital%20Ocean%20Droplet.md)
 
 Tired of the look of Git Bash? Take a [crack at customizing](https://dev.to/blikoor/customize-git-bash-shell-498l) it!
 
-### 📌 Assignment 6 📌, due before class on Thu Nov 9th:  
-Get the **Notify App** running that we built in class using `pm2`. Let the app run in the background throughout your week and experiment with different scenarios like the following:
+### 📌 Assignment 6 📌, due before class on ~~Thu Nov 9th~~ Tue Nov 14th:  
+Get the **Notify App** that we built in class running on your Digital Ocean Droplet using `pm2`. Let the app run in the background throughout your week and experiment with different scenarios like the following:
 - Send yourself a reminder in the mornings before you start your day.
 - Send yourself a reminder to do an errand at some point in your day.
 - Send yourself a reminder to stand and stretch while doing homework.
 - Devise your own reminder(s)!
-
 
 
 #### Submitting your work 
