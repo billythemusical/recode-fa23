@@ -409,13 +409,17 @@ Let the app run in the background throughout your week and experiment with diffe
 
 ## Module 7 - Simple Web Servers  
 
-Working with Express.js
-- a simple web server
+[Servers](modules/07-servers/servers.md)
 - serving static files
+- a simple web server
+- express.js
 - taking requests
+- [nodemon](modules/07-servers/nodemon.md)
+...
+- API's
 - making routes
 - magic ⓼ ball is back!
-
+- passwords
 - [date-and-time](https://www.npmjs.com/package/date-and-time) package
 
 ### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
