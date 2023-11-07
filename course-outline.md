@@ -415,12 +415,16 @@ Let the app run in the background throughout your week and experiment with diffe
 - express.js
 - taking requests
 - [nodemon](modules/07-servers/nodemon.md)
-...
+
+Day 2
+
 - API's
 - making routes
 - magic ⓼ ball is back!
 - passwords
 - [date-and-time](https://www.npmjs.com/package/date-and-time) package
+- submitting forms
+- saving files
 
 ### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
 
