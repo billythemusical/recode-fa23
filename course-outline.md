@@ -407,10 +407,38 @@ Let the app run in the background throughout your week and experiment with diffe
 >
 
 
-## Module 7 - Using Git and Github  
+## Module 7 - Simple Web Servers  
 
-## Module 8 - Working outside the browser  
+Working with Express.js
+- a simple web server
+- serving static files
+- taking requests
+- making routes
+- magic ⓼ ball is back!
 
-## Module 9 - Progressive Web Apps  
+- [date-and-time](https://www.npmjs.com/package/date-and-time) package
 
-## Module 10 - Simple Web Servers  
+### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
+
+Read this MIT Tech Review [Article](./modules/07-servers/China-is-escalating-its-war-on-kids-screen-time-MIT-Technology-Review.pdf) on China limiting screen time for it's youth and write your response on this Google Doc. Pay particular attention to the following topics and please share your thoughts generally:
+- identity and age verification online
+- social media impact on adolescents
+- your personal experience trying to limit screen time
+- the idea of "always on"
+- work/life balance with smart phones
+
+
+### 📌 Assignment 7 📌, due before class on Tue Nov 14th: we
+
+"Operating Hours"
+
+Serve your resume but only during the hours you are willing to work for your prospective employer. When outside of those hours, design an HTML page to be returned by the server. The page should display a simple message explaining why your resume cannot (or will be shortly) be displayed. 
+
+Additional details TBD.
+
+
+## Module 8 - Getting Connected with Sockets
+
+## Module 9 - Using Git and Github 
+
+## Module 10 - Progressive Web Apps

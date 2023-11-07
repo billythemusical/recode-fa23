@@ -1,0 +1,18 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./bkgd.jpg');
+}
+
+main {
+    justify-content: center;
+    align-content: center;
+    /* display: flex; */
+    text-align: center;
+}
+
+canvas {
+    margin: 10px;
+    border: 10px solid rgb(196, 196, 196);
+}

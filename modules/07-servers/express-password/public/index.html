@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="utf-8" />
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const password = prompt("Please enter the password:");
+            // Post the password back to the server at the matching route
+            fetch("/verify-password", {
+                method: "POST",
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: 'password=' + password
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.verified) {
+                        // Show the rest of the page content or redirect as necessary
+                        document.getElementById('protected-content').style.display = 'block';
+                    } else {
+                        alert('Incorrect password');
+                        // Optionally, redirect or hide the content
+                        // window.location.href = 'https://www.google.com';
+                        // return Promise.reject('Incorrect password');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</head>
+
+<body id="protected-content">
+    <main>
+        <h1>Ahoy world! 🏴‍☠️</h1>
+        <img src="./frawg.jpg" width="300px" />
+    </main>
+
+</body>
+
+</html>
