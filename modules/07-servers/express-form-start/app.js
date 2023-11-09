@@ -1,3 +1,5 @@
+const path = require('path')
+
 // our server apps
 const express = require('express');
 const app = express()
@@ -13,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 // where we'll upload our form data
-app.post("/submit", (req, res) => {
+app.post("/thank-you", (req, res) => {
     if (req.body) {
         console.log(req.body)
     }
