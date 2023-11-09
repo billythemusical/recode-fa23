@@ -7,6 +7,7 @@ One of the most fundamental functions of a server is working with user data. Her
 
 We can create something similiar using Express.js and HTML forms. Below is an example form that we can put into any HTML page. Notice the `action` attribute. Once the form is submitted, this is the route that our server will need to be listening at in order to receive the form data.
 ```HTML
+<!-- CLIENT HTML -->
     <form action="/submit" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -19,6 +20,7 @@ We can create something similiar using Express.js and HTML forms. Below is an ex
 In Express.js, we can set up a basic `post` route to listen for `/submit` requests and console.log the body of those request to see what all we get. It's a good idea to check though if there is a `req.body` or else you'll crash the server. We'll also need to add some middleware to help us process the form data. Here's an example:
 
 ```js
+// server javascript 
 app.post("/submit", (req, res) => {
     if(req.body) {
         console.log(req.body)
@@ -40,11 +42,11 @@ app.use(express.urlencoded({ extended: true }));
 
 Let's check out the [starter project](https://github.com/billythemusical/recode-fa23/tree/main/modules/07-servers/express-form-start) and talk more about building this application out. The next things we'd like to do is:
 
-1) Add a database so we can save posts that users make.
-    - tools required: [nedb](https://www.npmjs.com/package/nedb)
-2) Have a listings page where users can see all the community posts.
-    - tools required: [ejs](https://www.npmjs.com/package/ejs)
-3) Add the ability for users to upload pictures to their posts.
-    - tools required: [multer](https://www.npmjs.com/package/multer)
+1) Add a database so we can save posts that users make.  
+    - tools required: [nedb](https://www.npmjs.com/package/nedb)  
+2) Have a listings page where users can see all the community posts.  
+    - tools required: [ejs](https://www.npmjs.com/package/ejs)  
+3) Add the ability for users to upload pictures to their posts.  
+    - tools required: [multer](https://www.npmjs.com/package/multer)  
 
 The fully [completed project](https://github.com/billythemusical/recode-fa23/tree/main/modules/07-servers/express-form-full) is also available for you to check out.
