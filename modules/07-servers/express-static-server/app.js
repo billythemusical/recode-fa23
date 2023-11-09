@@ -9,4 +9,4 @@ const port = 3000
 app.use(express.static('public'))
 
 // listen means the server is running
-app.listen(port, () => console.log(`Server listening here: http://localhost:${port}!`))
+app.listen(port, () => console.log(`Server listening here: http://localhost:${port}`))

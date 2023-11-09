@@ -63,17 +63,30 @@ app.listen(port, () => console.log(`Server listening here: http://localhost:${po
 
 Now when we point our browser to `http://localhost:3000`, we should see 'hello world' in our browser window. 
 
-### So what???
-
-Well, there are a lot of fun things you can do with servers, and we will touch on some of them in this class, but it's a whole wild world out there and I would encourage you to check out a book like [Express In Action](https://www.manning.com/books/express-in-action) which can show you how to build applications what manage users and databases and the like. But we can still have some fun, so let's see what we can get up to...
+> Reading recommendation: The excellent book [Express In Action](https://www.manning.com/books/express-in-action) can show you how to build robust and secure server applications that manage user data, databases, and more.
 
 #### Under lock and key
 
-Firstly, servers allow us a level of security and obfuscation that front-end code alone does not. After all, your bank account information is availalbe on the web, but only to a select few, namely (and only) you (so we hope 😈). This is accomplished with passwords of course. And since servers store those passwords out of sight, users can rest assured that their information is secure. 
+Servers allow us a level of security and obfuscation that front-end code alone does not. After all, your bank account information is availalbe on the web, but only to a select few, namely (and only) you (so we hope 😈). This is accomplished with passwords of course. And since servers store those passwords out of sight, users can rest assured that their information is secure. 
 
 We can demonstrate this behavior by putting our website behind a simple password system using Express.js's middleware.
 
 Check out this example [here](express-password/app.js).
+
+## Status Report
+
+We're all familiar with the `404` NOT FOUND error, but did you know there are a number of [response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)?
+
+From MDN:
+
+ HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+    1) Informational responses (100 – 199)
+    2) Successful responses (200 – 299)
+    3) Redirection messages (300 – 399)
+    4) Client error responses (400 – 499)
+    5) Server error responses (500 – 599)
+
 
 ``````
 

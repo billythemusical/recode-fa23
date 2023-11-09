@@ -417,15 +417,17 @@ Let the app run in the background throughout your week and experiment with diffe
 - express.js
 - taking requests
 - [nodemon](modules/07-servers/nodemon.md)
+- magic ⓼ ball is back!
+- passwords
 
 Day 2
 
 - API's
 - making routes
-- magic ⓼ ball is back!
-- passwords
 - [date-and-time](https://www.npmjs.com/package/date-and-time) package
 - submitting forms
+- [Recording booth](), a "full-stack" app
+- server-side rendering
 - saving files
 
 ### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
@@ -437,8 +439,13 @@ Read this MIT Tech Review [Article](./modules/07-servers/China-is-escalating-its
 - the idea of "always on"
 - work/life balance with smart phones
 
-
 ## Module 8 - Getting Connected with Sockets
+
+Real-time communication
+- chat example from [Socket.io's tutorial](https://socket.io/docs/v4/tutorial/introduction)
+- sending mouse pos
+    - quiz example
+- sending other data
 
 ## Module 9 - Progressive Web Apps 
 

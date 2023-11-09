@@ -9,4 +9,4 @@ app.get("/", (req, res) => {
 })
 
 // listen means the server is running
-app.listen(port, () => console.log(`Server listening here: http://localhost:${port}!`))
+app.listen(port, () => console.log(`Server listening here: http://localhost:${port}`))
