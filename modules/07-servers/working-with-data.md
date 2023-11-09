@@ -16,7 +16,7 @@ We can create something similiar using Express.js and HTML forms. Below is an ex
     </form>
 ```
 
-In Express.js, we can set up a basic `post` route to listen for `/submit` requests and console.log the body of those request to see what all we get. Here's an example:
+In Express.js, we can set up a basic `post` route to listen for `/submit` requests and console.log the body of those request to see what all we get. It's a good idea to check though if there is a `req.body` or else you'll crash the server. We'll also need to add some middleware to help us process the form data. Here's an example:
 
 ```js
 app.post("/submit", (req, res) => {
@@ -26,7 +26,9 @@ app.post("/submit", (req, res) => {
 }
 ```
 
-It's a good idea to check though if there is a `req.body` or else you'll crash the server. We'll also need to add some middleware to help us process the form data.
+The output to the console will look something like this. The `name` value in the HTML will be the key in the JSON, e.g. `name="name"` will be `{ name: <user input> }` and `name="item"` will be `{ item: <user input> }`:
+
+![form data with no image](../../images/form-data-no-image.png)
 
 ```js
 // middleware for parsing application/json
