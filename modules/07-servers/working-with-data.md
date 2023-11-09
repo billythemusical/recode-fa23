@@ -36,11 +36,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 ```
 
-Let's check out the example project and talk more about building this application out. The next things we'd like to do is:
+Let's check out the [starter project](express-form-start/) and talk more about building this application out. The next things we'd like to do is:
 
-1) Add a database using `nedb` so we can save posts that users make.
-    - [nedb](https://www.npmjs.com/package/nedb)
+1) Add a database so we can save posts that users make.
+    - tools required: [nedb](https://www.npmjs.com/package/nedb)
 2) Have a listings page where users can see all the community posts.
     - tools required: [ejs](https://www.npmjs.com/package/ejs)
 3) Add the ability for users to upload pictures to their posts.
     - tools required: [multer](https://www.npmjs.com/package/multer)
+
+The fully [completed project](express-form-full/) is also available for you to check out.
