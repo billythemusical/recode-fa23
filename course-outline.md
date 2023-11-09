@@ -424,11 +424,14 @@ Day 2
 
 - API's
 - making routes
-- [date-and-time](https://www.npmjs.com/package/date-and-time) package
-- submitting forms
-- [Recording booth](), a "full-stack" app
+
+[Working with data](modules/07-servers/working-with-data.md)
 - server-side rendering
 - saving files
+- submitting forms
+- [date-and-time](https://www.npmjs.com/package/date-and-time) package
+- [Recording booth](https://github.com/billythemusical/recording-booth), a full-stack app
+
 
 ### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
 
