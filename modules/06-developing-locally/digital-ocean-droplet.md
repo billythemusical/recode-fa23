@@ -111,8 +111,8 @@ If done properly, the `.env` file will be grayed out in VS Code. *Remember to sa
 
 <img src="../../images/env-gray.png" alt="Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file."
 style="display: block;
-  max-width: 100px;
-  min-width: 50px;" />
+  width: 25%;
+  min-width: 200px;" />
 <!-- ![Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file.](../../images/env-gray.png) -->
 
 Once that is taken care of, commit your local changes using Github Desktop and push them to your Github repo. Then you can open this repo on Github and use the URL in the next step when we **clone** the repository in our droplet using the command line.
