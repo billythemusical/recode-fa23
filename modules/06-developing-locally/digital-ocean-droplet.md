@@ -114,7 +114,7 @@ Once that is taken care of, commit your local changes using Github Desktop and p
 
 >The repo you are working with must be a **PUBLIC** repo in order to be cloned in the next step!
 
-#### Cloning a Github repository
+## Cloning a Github repository
 
 Even though the droplet is connected to the web, we can't use a web browser or a desktop app like Github Desktop to get our code onto it. But we can use the command line and `git` to download an exact copy of the code onto the droplet. This is a process called 'cloning' the repo.
 
@@ -151,7 +151,7 @@ For a real-time monitoring, try:
 
 ![a screenshot of the pm2 monitoring window](../../images/pm2-monit.png)
 
-#### Making Changes
+## Making Changes
 
 To make changes to the app, you have to take a few things into consideration. Firstly, the code has already been compiled and is being managed and run by `pm2`. So any changes that you make will not affect the process that `pm2` is managing, similar to how the web browser won't show changes until refreshed. You have to stop the current `pm2` process and restart it in order for any changes to take effect. 
 
@@ -169,7 +169,7 @@ The process should go as follows:
 
 >We always follow this process - develop locally / pull remotely - because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us!
 
-#### Deactivating or Deleting a Droplet
+# Deactivating or Deleting a Droplet
 
 Droplets can be deactivated or deleted at any time. Deactivating is helpful if you have a runaway process or if the droplet is under attack 😱. *Droplets will still accrue charges though if deactivated.* Deactivating a droplet will maintain all of its files and configurations while deleting it will erase it from existence entirely (and cease to charge your account). 
 
