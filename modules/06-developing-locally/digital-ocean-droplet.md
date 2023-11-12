@@ -20,7 +20,7 @@ Well, other web apps like Glitch, Heroku and Replit do not allow you full contro
 ### Generating an API Token
 
 You'll first need to generate a new personal access token. 
-1. Go to the API tab in your console [here]((https://cloud.digitalocean.com/account/api/tokens/), 
+1. Go to the API tab in your console [here](https://cloud.digitalocean.com/account/api/tokens/), 
 2. Make sure that the **Write** box is checked ☑️ and click **Generate**.
 3. **Copy this token** as it will not be shown again.
 
