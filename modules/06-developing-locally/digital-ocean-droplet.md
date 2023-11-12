@@ -157,7 +157,7 @@ The process should go as follows:
     - Test
     - Debug
     - Commit and push the working code to Github
-2. ON YOUR DROPLET:
+2. ON YOUR DROPLET: 
     - `cd` into the repo
     - `git pull` to get the new changes
     - `pm2 restart <app name>` where `<app name>` is the name of your app
