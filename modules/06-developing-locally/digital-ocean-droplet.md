@@ -28,7 +28,7 @@ You'll first need to generate a new personal access token.
 style="display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
   min-width: 200px;" />
 
 ### Using your API Token 
@@ -69,7 +69,6 @@ You will also get an email with the details of your Droplet including the **IP a
 If there is an error, check that your API key is correct. You can do this by typing 
 ```bash
 printenv | grep TOKEN
-
 # outputs the value of the TOKEN variable
 ```
 If the output of `TOKEN` does not match your API key, reassign the `TOKEN` variable again, i.e. `export TOKEN=YOUR_API_TOKEN`.
@@ -97,17 +96,23 @@ npm install -g pm2
 
 ### Moving local code to your Droplet
 
-Before you commit your local changes using Github Deskopt, you'll want to first make sure you don't commit your `.env` file, which has your Pushover API tokens, to Github. We do this with the `.gitignore` file.
+#### Ignoring .env file
 
-Make sure you have a `.gitignore` file in the folder with your code and that is has the `.env` file listed. Here is an example [`.gitignore`](https://github.com/billythemusical/notify-app/blob/main/.gitignore) file from the `notify-app` [example repo](https://github.com/billythemusical/notify-app).
+Before you commit your local changes using Github Destkop, you'll want to first make sure that you don't commit your `.env` file, which has your Pushover API tokens. To do this, you add your `.env` file to the `.gitignore` file.
+
+First, make sure you have a `.gitignore` file in the folder with your code and that is has the `.env` file listed. Here is an example [`.gitignore`](https://github.com/billythemusical/notify-app/blob/main/.gitignore) file from the `notify-app` [example repo](https://github.com/billythemusical/notify-app).
 
 If done properly, the `.env` file will be grayed out in VS Code. *Remember to save your .gitignore file for the changes to take effect.*
 
-![Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file.](../../images/env-gray.png)
+<img src="../../images/env-gray.png" alt="Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file."
+style="display: block;
+  width: 25%;
+  min-width: 50px;" />
+<!-- ![Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file.](../../images/env-gray.png) -->
 
-Once that is taken care of, commit your local changes and push them to your Github repo. Then you can open this repo on Github and use the URL in the next step when we **clone** the repository in our droplet using the command line.
+Once that is taken care of, commit your local changes using Github Desktop and push them to your Github repo. Then you can open this repo on Github and use the URL in the next step when we **clone** the repository in our droplet using the command line.
 
->The repo you are working with must be **PUBLIC** in order to be cloned in the next step!
+>The repo you are working with must be a **PUBLIC** repo in order to be cloned in the next step!
 
 #### Git clone
 
