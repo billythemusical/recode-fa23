@@ -1,4 +1,9 @@
-# Digital Ocean
+---
+title: Digital Ocean Droplets
+module: 06-developing-locally
+---
+
+# Digital Ocean Droplets
 
 ## Setting up an account
 
