@@ -114,11 +114,11 @@ Once that is taken care of, commit your local changes using Github Desktop and p
 
 >The repo you are working with must be a **PUBLIC** repo in order to be cloned in the next step!
 
-#### Git clone
+#### Cloning a Github repository
 
-Even though the droplet is connected to the web, we can't use a web browser or a desktop app like Github Desktop to get our code onto it. But we can use `git` as it is already installed. 
+Even though the droplet is connected to the web, we can't use a web browser or a desktop app like Github Desktop to get our code onto it. But we can use the command line and `git` to download an exact copy of the code onto the droplet. This is a process called 'cloning' the repo.
 
-To clone a repo from the command line, we can use the `git clone` and provide a URL as the next argument like so:
+To clone a repo, we simply use the `git clone` command and provide a URL as the next argument, e.g.:
 
 ```bash
 git clone https://github.com/username/repo
