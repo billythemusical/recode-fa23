@@ -106,7 +106,7 @@ If done properly, the `.env` file will be grayed out in VS Code. *Remember to sa
 
 <img src="../../images/env-gray.png" alt="Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file."
 style="display: block;
-  width: 25%;
+  max-width: 100px;
   min-width: 50px;" />
 <!-- ![Showing the .env file name is grayed out in VS Code explorer window due to it being added properly in the .gitignore file.](../../images/env-gray.png) -->
 
