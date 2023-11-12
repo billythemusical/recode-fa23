@@ -6,6 +6,7 @@ If you haven't already, create a free account over at [Digital Ocean](digitaloce
 
 They regularly give away $200 in free credits and have additional features available to students - [Referral Link](https://www.digitalocean.com/github-students). You'll have to put down a valid payment method first, but there's no need to worry. They're a totally legit company that I have used for years. 👍🏼
 
+
 ## Droplets
 
 A droplet is a remote computer or virtual machine (VM for short). It runs in the cloud and has access to the internet. Theirs run on an OS called Ubuntu which is a Linux Operating system. Save some minor differences, it will behave much like the Unix (Mac) and Git Bash (Windows) terminals we have been using. 
@@ -16,21 +17,35 @@ Well, other web apps like Glitch, Heroku and Replit do not allow you full contro
 
 ## Setting up a Droplet
 
-#### Via Command Line 
+### Generating an API Token
 
-You'll first need to generate a new personal access token. Go to the API tab in your console [here]((https://cloud.digitalocean.com/account/api/tokens/), click **Generate**, and make sure that the **Write** box is checked ☑️.
+You'll first need to generate a new personal access token. 
+1. Go to the API tab in your console [here]((https://cloud.digitalocean.com/account/api/tokens/), 
+2. Make sure that the **Write** box is checked ☑️ and click **Generate**.
+3. **Copy this token** as it will not be shown again.
 
-![Digital Ocean Create New Personal Access Token](../../images/new-personal-access-token.png)
+<img src="../../images/new-personal-access-token.png" alt="Digital Ocean Create New Personal Access Token"
+style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 200px;" />
 
-Copy the token and be sure not to lose it for the next little bit cause they won't show it to you again. 
+### Using your API Token 
 
-Now, we will use the `export` command in our local terminal like so: `export TOKEN="<your API token here>"` where `<your API token here>` is the API token that you just created. This will create a local environment variable that we will call in the next command we run below. 
+Now, we will use the `export` command in our local terminal like so: 
+```bash
+export TOKEN=YOUR_API_TOKEN
+```
+...where `YOUR_API_TOKEN` is the API token that you just created. This will create a local environment variable that we will call in the next command we run below.
 
 >[Read more about local environment variables](environment-variables.md).
 
-Now we will create the droplet via a `curl` command. `curl` is a way to run `http` requests from the command line.
+### Via Command Line
 
-When we run this lengthy `curl` command below (just copy/paste the command into your terminal and hit ENTER), the `TOKEN` variable with our API key will be included from the environment, using the special `$` syntax, i.e. `$TOKEN`.
+We can now create the droplet using `curl` command which will make an HTTP call to Digital Ocean's Droplet API.
+
+When we run this lengthy `curl` command below, the `TOKEN` variable with our API key will be included from the local environment, using the special `$` syntax, i.e. `$TOKEN`. Just copy/paste the command into your terminal and hit ENTER.
 
 ```bash
 curl -X POST -H 'Content-Type: application/json' \
@@ -43,15 +58,21 @@ curl -X POST -H 'Content-Type: application/json' \
     "https://api.digitalocean.com/v2/droplets"
 ```
 
-The output of this command, if successful, will be a lengthy JSON object:
+If successful, the output of this command will be a lengthy JSON object:
 ```bash
 {"droplet":{"id":382884684,"name":"recode","memory":512,"vcpus":1, ...
 ```
->Here's the [full output](droplet-response.json).
+>Here's an example the [full output](droplet-response.json).
 
-If there is an error, check that your API key is correct. You can do this by typing `printenv | grep TOKEN` which will tell you the value of the `TOKEN` variable. If that does not match, reassign the `TOKEN` variable again, i.e. `export TOKEN='<your api token here>'`.
+You will also get an email with the details of your Droplet including the **IP address** and **password**. You will need the password when you log in to the Droplet for the first time via the online console/terminal.
 
-You will then get an email with the details of your Droplet including the **IP address** and **password**. You will need the password when you log in to the Droplet for the first time via the online console/terminal.
+If there is an error, check that your API key is correct. You can do this by typing 
+```bash
+printenv | grep TOKEN
+
+# outputs the value of the TOKEN variable
+```
+If the output of `TOKEN` does not match your API key, reassign the `TOKEN` variable again, i.e. `export TOKEN=YOUR_API_TOKEN`.
 
 ### Accessing our Droplet
 
@@ -103,10 +124,10 @@ When you clone a repo, a new folder is made with the name of the repo. You can s
 
 Then do the following in your droplet: 
 
-1) `cd` into the new repo folder
-2) `npm install` the dependencies
-3) Add a `.env` file that matches your local `.env` file
-4) Start the app with `pm2 start` and the script name you were working with.
+1. `cd` into the new repo folder
+2. `npm install` the dependencies
+3. Add a `.env` file that matches your local `.env` file
+4. Start the app with `pm2 start` and the script name you were working with.
 
 #### Managing the pm2 process
 
@@ -131,12 +152,12 @@ To make changes to the app, you have to take a few things into consideration. Fi
 
 The process should go as follows:
 
-1) ON YOUR LOCAL MACHINE: 
+1. ON YOUR LOCAL MACHINE: 
     - Make changes 
     - Test
     - Debug
     - Commit and push the working code to Github
-2) ON YOUR DROPLET:
+2. ON YOUR DROPLET:
     - `cd` into the repo
     - `git pull` to get the new changes
     - `pm2 restart <app name>` where `<app name>` is the name of your app

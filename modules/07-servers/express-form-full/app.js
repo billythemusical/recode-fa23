@@ -15,7 +15,6 @@ const db = new Datastore({ filename: './datastore.db', autoload: true });
 
 // our server apps
 const express = require('express');
-const e = require('express');
 const app = express()
 const port = 3000
 
