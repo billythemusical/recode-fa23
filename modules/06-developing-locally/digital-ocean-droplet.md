@@ -160,19 +160,29 @@ For a real-time monitoring, try:
 
 To make changes to the app, you have to take a few things into consideration. Firstly, the code has already been compiled and is being managed and run by `pm2`. So any changes that you make will not affect the process that `pm2` is managing, similar to how the web browser won't show changes until refreshed. You have to stop the current `pm2` process and restart it in order for any changes to take effect. 
 
-The process should go as follows:
+<img src="../../images/local-development.png" alt="Local development cycle using Github to deploy remote code"
+style="display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  min-width: 200px;" />
+
+The process for your droplet should go as follows:
 
 1. ON YOUR LOCAL MACHINE: 
-    - Make changes 
-    - Test
-    - Debug
-    - Commit and push the working code to Github
-2. ON YOUR DROPLET: 
-    - `cd` into the repo
-    - `git pull` to get the new changes
-    - `pm2 restart <app name>` where `<app name>` is the name of your app
+    - Develop 
+    - Test and Debug
+    - Commit your changes
+    - Push the working code to Github
+2. ON YOUR REMOTE MACHINE: 
+    - Clone the repo
+    - Install and deploy your app
+    - Monitor the logs for errors
+    - To get new updates, PULL the changes into your repo (`git pull`)
+    - Restart your app
+    - Rinse and repeat
 
->We always follow this process - develop locally / pull remotely - because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us!
+We always follow this process - develop locally / pull remotely - because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us!
 
 # Deactivating or Deleting a Droplet
 
