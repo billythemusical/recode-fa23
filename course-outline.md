@@ -442,6 +442,16 @@ Read this MIT Tech Review [Article](./modules/07-servers/China-is-escalating-its
 - the idea of "always on"
 - work/life balance with smart phones
 
+## 📌 Assignment 7 📌 - Due before class on Tue Nov 21st:
+
+### Normal Business Hours Assignment
+
+[INSTRUCTIONS ARE HERE](modules/07-servers/normal-business-hours.md)
+
+Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16).
+
+
+
 ## Module 8 - Getting Connected with Sockets
 
 Real-time communication
