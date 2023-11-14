@@ -137,6 +137,12 @@ Then do the following in your droplet:
 1. `cd` into the new repo folder
 2. `npm install` the dependencies
 3. Add a `.env` file that matches your local `.env` file
+    - Use the `nano` text editor to create the file like so: 
+
+        ```bash
+        nano .env
+        ``` 
+    - Then paste in your credentials from your local `.env` file and follow the instructions at the bottom of the editor to save and exit.
 4. Start the app with `pm2 start` and the script name you were working with.
 
 #### Managing the pm2 process
@@ -175,12 +181,13 @@ The process for your droplet should go as follows:
     - Commit your changes
     - Push the working code to Github
 2. ON YOUR REMOTE MACHINE: 
-    - Clone the repo
-    - Install and deploy your app
+    - Clone the remote repo (`git clone https://github.com/username/repo`)
+    - Install your dependencies 
+    - Deploy your app
     - Monitor the logs for errors
-    - To get new updates, PULL the changes into your repo (`git pull`)
-    - Restart your app
-    - Rinse and repeat
+        - Pull new changes into your repo (`git pull`)
+        - Restart your app
+
 
 We always follow this process - develop locally / pull remotely - because it's much easier to test and debug locally than it is on a remote machine. And Git/Github makes this so much more convenient for us!
 
