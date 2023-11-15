@@ -57,8 +57,15 @@ app.post("/thank-you", (req, res) => {
 app.get('/listings', (req, res) => {
     db.find({}, (err, docs) => {
         // pick up here with all the docs, render as listings...
+        if (err) {
+            console.error('There was an ERROR retrieving the database.')
+        } else {
+            console.log('Here are your docs.', docs)
 
-        // create listings.ejs file and render views
+            // render your EJS template with the entries
+            // res.send('what do you want?')
+            res.render('listings', { listings: docs });
+        }
     })
 })
 

@@ -55,30 +55,30 @@ Once forked and running locally, program the server to only serve your resume du
 #### Deploy to droplet
 
 Once the code is functioning properly on your local machine, you'll need to do the following to your droplet:
-1. Log in to your droplet terminal from the Digital Ocean console.
-2. Upload the working code using `git clone`
-  - Instructions are [here](../06-developing-locally/digital-ocean-droplet.md#cloning-a-github-repository) from the notify assignment, starting with "Cloning a github repository". 
-  - You can ignore the `.env` file stuff for this though.
-3. Allow port 3000
-  - The droplet will also need to allow port 3000 to receive traffic from the web, so we'll need to run this command in our droplet terminal:
-    ```bash
-    ufw allow 3000
-    ```
-4. Run your server with `pm2 start app.js`
-5. Check pm2 for errors `pm2 monit`
-6. Visit your server at `http://XX.XX.XX.XX:3000` where `XX.XX.XX.XX` is your Reserved IP address.
+
+First, log in to your Digital Ocean account on the website. You will need to make sure your droplet has a static or "Reserved" IP address (the terms "static" and "reserved" are interchangeable). This is so we can visit the site reliably on the web. Instructions to set this up are [here](static-ip.md).
+
+Once this is complete, from in your droplet terminal, do the following:
+1. Upload your working code using `git clone`
+  - Refresher instructions are [here](../06-developing-locally/digital-ocean-droplet.md#cloning-a-github-repository) from the notify assignment, starting with "Cloning a github repository". You can ignore the `.env` stuff as it is not required for this.
+2. Allow port 3000 using `ufw allow 3000`
+  - This will open port 3000 on your droplet to receive web traffic
+3. Run your server from within your repo with `pm2 start app.js`
+4. Check pm2 for errors `pm2 monit`
+5. Visit your server at your static IP like `http://XX.XX.XX.XX:3000` where `XX.XX.XX.XX` is your static IP address.
 
 
 #### Submitting your work
 
-- You can submit the new FORKED repo that you made from above or make a new repository called **07-assignment**. Either is fine. This repo should have the server code you wrote in it. 
-- Use the README to answer the questions above. 
-- Provide a link at the top of your README page that links to your server that is running on digital ocean. It should look like this `http://XXX.XX.XX.XX:3000/` where you have replaced `XXX.XX.XX.XX` with your static IP address.
+You will submit your final Github repo which should have a README. There should be 3 things in the README:
+1. **A link to your server** that is currently running on Digital Ocean. It should look like this `http://XXX.XX.XX.XX:3000/` where you have replaced `XXX.XX.XX.XX` with your static IP address.
+1. A section with **answers to the prompts** above about your values and how you chose your working hours. This should be anywhere from 250-500 words.
+2. **Documentation** of your coding process, inspirations, errors, and found code.
 
 Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16) before the due date.
 
 <hr>
 
->Want more of a challenge? 
+>Want more of a challenge?
 >- Use `ejs` to programmatically render your business hours into the `denied.html` page so that they update as your server updates.
->- Try programming your vacation days into the server using additional conditional statements and checking for specific dates of the year like Labor Day, Indigenous People's Day, etc.
+>- Try programming your vacation days into the server as well using additional conditional statements to check for specific dates of the year like Labor Day, Indigenous People's Day, etc.
