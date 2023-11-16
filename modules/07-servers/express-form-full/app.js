@@ -13,27 +13,16 @@ const path = require('path')
 const Datastore = require('nedb');
 const db = new Datastore({ filename: './datastore.db', autoload: true });
 
+// using multer to save our uploaded files
+const multer = require('multer')
+const upload = multer({ destination: './public/uploads/' })
+// ...or import our custom multer function 
+// const saveFile = require('./saveFile.js')
+
 // our server apps
 const express = require('express');
 const app = express()
 const port = 3000
-
-// for saving our uploaded files
-const multer = require('multer')
-// we have to do some jujitsu to get the original filenames to save correctly
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, './public/uploads/')
-    },
-    filename: (req, file, cb) => {
-        // Use the original file basename and extension, e.g. 'sofa' and '.jpeg'
-        const ext = path.extname(file.originalname)
-        const basename = path.basename(file.originalname, ext)
-        // And add the date to allow for duplicates/re-posts
-        cb(null, `${basename}-${Date.now()}${ext}`)
-    }
-})
-const upload = multer({ storage: storage })
 
 // this will allow our server to render HTML
 app.set('view engine', 'ejs');
@@ -42,19 +31,20 @@ app.set('views', path.join(__dirname, 'views'));
 
 // middleware for parsing application/json
 app.use(express.json());
-
-// middleware for parsing application/x-www-form-urlencoded
+// middleware for parsing form data aka application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-// serve the static files
+// simply log the requests at the come in
 app.use((req, res, next) => {
-    console.log(req.url)
+    console.log(`REQUEST: ${req.url}`)
     next()
 })
+// server our static files
 app.use(express.static('public'))
 
 // where we'll upload our form data
-app.post("/submit", upload.single('image'), (req, res) => {
+// to use the custom multer function, change upload.single to saveFile.single
+app.post('/thank-you', upload.single('image'), (req, res) => {
     if (req.body) {
         // multer adds the .file to the req object 
         console.log(req.body, req.file)

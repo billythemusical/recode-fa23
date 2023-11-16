@@ -430,7 +430,23 @@ Day 2
 - saving files
 - submitting forms
 - [date-and-time](https://www.npmjs.com/package/date-and-time) package
-- [Recording booth](https://github.com/billythemusical/recording-booth), a full-stack app
+
+Day 3
+- Cloud production platforms
+    - [Glitch.com](https://glitch.io) 
+        - free
+        - friendly URLs
+        - goes to sleep if not boosted
+    - [Stackblitz.com](https://stackblitz.com/) 
+        - free
+        - well integrated with Github
+    - [Replit.com](https://replit.com)
+        - free, but has annoying meters that choke usage
+        - lots of template projects to clone
+- Static IP's for DNS (Show how on Digital Ocean)
+- HTTPS with EFF's [Certbot](https://certbot.eff.org/)
+- [Recording booth](https://github.com/billythemusical/recording-booth)
+    - A full-stack app with NGINX as front end
 
 
 ### 📕 Reading 7 📕 - Due before class on Thu Nov 9th:
@@ -448,7 +464,7 @@ Read this MIT Tech Review [Article](./modules/07-servers/China-is-escalating-its
 
 [INSTRUCTIONS ARE HERE](modules/07-servers/normal-business-hours.md)
 
-Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16).
+Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16)
 
 
 

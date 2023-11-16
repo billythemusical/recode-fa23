@@ -15,3 +15,12 @@ style="display: block;
   margin-right: auto;
   width: 75%;
   min-width: 200px;" />
+
+  ### Domain Names
+
+  >Not required for this assignment, but useful knowledge.
+
+  Domain names are used by [Domain Name Systems](https://www.google.com/search?q=dns+meaning) (DNS) to point readable website names to IP addresses where web servers live and are listening. When you buy a domain name from a DNS like GoDaddy or NameCheap, these services link your domain name to an IP that you supply, allowing you to run your own server "behind" the domain name. Digital Ocean has a place in the web console to manage the domains you own and point them to your droplet.
+
+  - Setting up HTTPS
+  - HTTPS for ALL (EFF)
