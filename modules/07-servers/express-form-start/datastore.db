@@ -1,2 +1,1 @@
-{"name":"Billy Bennett","contact":"(555) 287 3456","time":"Thu, Nov 9, 12:00 PM","item":"Sofa","description":"It's still green!","_id":"I1KjhBeSpMDxnSFP"}
-{"name":"Jane Doe","contact":"myemail@gmail.com","time":"Thu, Nov 9, 12:00 PM","item":"Motorcycle","description":"It works!","_id":"mvL6ReoyW2iFXO9z"}
+{"name":"Billy Bennett","contact":"(555) 287 3456","time":"Thu, Nov 16, 11:00 AM","item":"Sofa","description":"It's yellow now!","image":{"fieldname":"image","originalname":"sofa.jpeg","encoding":"7bit","mimetype":"image/jpeg","destination":"./public/uploads/","filename":"1e29b27e1d2a9fd8e4eaf3875063cbde","path":"public/uploads/1e29b27e1d2a9fd8e4eaf3875063cbde","size":30642},"_id":"iVEKn0634JnYLojw"}

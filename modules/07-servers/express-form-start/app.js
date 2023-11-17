@@ -9,6 +9,10 @@ const express = require('express');
 const app = express()
 const port = 3000
 
+// using multer for file uploads
+const multer = require('multer')
+const upload = multer({ dest: './public/uploads/' })
+
 // this will allow our server to render HTML
 app.set('view engine', 'ejs');
 // setting our folder in which to put our EJS/HTML files
@@ -24,9 +28,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 // where we'll upload our form data
-app.post("/thank-you", (req, res) => {
+app.post("/thank-you", upload.single('image'), (req, res) => {
     if (req.body) {
-        console.log(req.body)
+        console.log(req.body, req.file)
     }
 
     // get the messy date and convert
