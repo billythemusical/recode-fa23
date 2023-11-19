@@ -485,4 +485,9 @@ Real-time communication
 
 ## Module 9 - Progressive Web Apps 
 
+- Overview of specification
+- 
+- serviceworker.js
+    - the beating heart of PWA's
+
 ## Module 10 - Git and Github
