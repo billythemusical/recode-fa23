@@ -479,15 +479,14 @@ Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1
 
 Real-time communication
 - chat example from [Socket.io's tutorial](https://socket.io/docs/v4/tutorial/introduction)
+- Starter code is [HERE](https://github.com/billythemusical/recode-fa23/tree/main/modules/08-sockets/socket-starter)
 - sending mouse pos
     - quiz example
 - sending other data
 
 ## Module 9 - Progressive Web Apps 
 
-- Overview of specification
-- 
-- serviceworker.js
-    - the beating heart of PWA's
+[CLASS NOTES](modules/09-pwa/PWA.md)
+[LINK TO CLASS RECORDING]()
 
 ## Module 10 - Git and Github
