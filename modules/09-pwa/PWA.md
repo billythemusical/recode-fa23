@@ -30,10 +30,10 @@ min-width: 200px;"
 
 Anatomy of a PWA
 
-- `sw.js`
-    - aka service worker - the beating heart of our app. Allows us to determine the behind the scenes behavior of our app. Can decide what we cache for offline use and what the full manifest of our app is. 
-- `manifest.json`
+- [`manifest.json`](https://developer.mozilla.org/en-US/docs/Web/Manifest)
     - a list of all the assets in our app
+- `service-worker.js`
+    - drives the cache-ing behavior for offline usage, based on the files in the `manifest.json` 
 - custom icons
     - 
 
