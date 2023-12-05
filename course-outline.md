@@ -496,18 +496,26 @@ Reference
 
 **Begin the design process for your own Progressive Web App.**
 
-This reading assignment will be the first step for Assignment 9. You can turn anything you've worked on this term into an installable PWA. Or you can design something new you've been wanting to make. You will submit your idea on [this form](https://docs.google.com/document/d/1OM4y1YyBR7wA_EePLaaXlViISJ3S_o8JrDxfwfd52LY/edit?usp=sharing) and indicate if you would like to work in a group for the final week. 
+This reading assignment will be the first step for Assignment 9. You can turn anything you've worked on this term into an installable PWA. Or you can design something new you've been wanting to make. 
+
+Submit your idea on [this form](https://docs.google.com/document/d/1OM4y1YyBR7wA_EePLaaXlViISJ3S_o8JrDxfwfd52LY/edit?usp=sharing). You can indicate if you would like to work in a group and find a partner. Please let me know if you intend to work in a group.
 
 ## 📌 Assignment 9 📌 - Due before class on Thu Dec 14th:
 
 **Design your own PWA based on your ideas in the reading.**
 
-This could be a Weather App, a Timer App, a Chat or ChatBot App, Daily NASA Photos, etc. Document and reflect on your design process in the README file, including how your initial ideas from the reading may have evolved over the course of the project. If your app includes a backend, make sure to include a link to the hosted app in your README, i.e. `http://XX.XX.XX.XX:3000`
+You can take a project you have done earlier in the semester and convert it to a PWA. Or you could design a new app! This could be a Weather App, a Timer App, a Socket Chat or ChatBot App, a Daily NASA Photos App, etc. You will want to document and reflect on your design process in the README file, including how your initial ideas from the reading assignment may have evolved over the course of the project. 
+
+If your app is just a front-end app, make sure the Github repo is set to "public." This way a user can install the app just by visiting your repo's Github pages site. If your app includes a backend component, make sure to include a link to the hosted app in your README, i.e. `http://XX.XX.XX.XX:3000`
 
 In addition to the UI/UX design details you would like to include, the app must be satisfy the following technical criteria:
 
 1. The app must be installable on desktop and mobile.
 2. The app must have icons for desktop and mobile.
+
+Here is some work from past semesters for inspiration:
+
+- [Grainy Gradients](https://wp.nyu.edu/drew/pwa-gradient/) by Drew Brown
 
 #### Submitting your work
 
