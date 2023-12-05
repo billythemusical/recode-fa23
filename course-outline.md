@@ -488,10 +488,43 @@ Real-time communication
 [CLASS NOTES](modules/09-pwa/PWA.md)
 [LINK TO CLASS RECORDING](https://nyu.zoom.us/rec/share/vJgysbf-a8lkR4tc2kQbBmqK5SU3Qo63m-OEgjJ_ZDEOgM8-V564d0yZ93lSE9GC.-UlnBJHulx1_dbkx?pwd=sgwETgzgkvLfoviHENSKgnLg-9S3ldxH)
 
-Reading 9 
+Reference
 - [Web.dev PWA Overview](https://web.dev/learn/pwa/progressive-web-apps)
 - [Define Your App Icons](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Define_app_icons)
 
-Create app icons for a fictional app of your own design using the instructions on the MDN site. We will be creating our own PWA eventually, so feel free to get a head start now. But this time will not be wasted as you get experience with this process. 
+### 📕 Reading 9 📕 - Due before class on Thu Dec 7th:
+
+**Begin the design process for your own Progressive Web App.**
+
+This reading assignment will be the first step for Assignment 9. You can turn anything you've worked on this term into an installable PWA. Or you can design something new you've been wanting to make. You will submit your idea on [this form](https://docs.google.com/document/d/1OM4y1YyBR7wA_EePLaaXlViISJ3S_o8JrDxfwfd52LY/edit?usp=sharing) and indicate if you would like to work in a group for the final week. 
+
+## 📌 Assignment 9 📌 - Due before class on Thu Dec 14th:
+
+**Design your own PWA based on your ideas in the reading.**
+
+This could be a Weather App, a Timer App, a Chat or ChatBot App, Daily NASA Photos, etc. Document and reflect on your design process in the README file, including how your initial ideas from the reading may have evolved over the course of the project. If your app includes a backend, make sure to include a link to the hosted app in your README, i.e. `http://XX.XX.XX.XX:3000`
+
+In addition to the UI/UX design details you would like to include, the app must be satisfy the following technical criteria:
+
+1. The app must be installable on desktop and mobile.
+2. The app must have icons for desktop and mobile.
+
+#### Submitting your work
+
+Upload your code to a new public repo on Github called "09-pwa" and share this link in [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16). If you're using both backend and front end code, make sure both are included in your repo with a link in the README to the hosted app on Digital Ocean (or wherever it is hosted).
+
 
 ## Module 10 - Git and Github
+
+Basic Git commands
+- git init
+- git add
+- git commit
+- git push
+- git pull
+- git fetch
+- git status
+Strategies for using Git in local dev
+- Branching
+- Stashing
+
