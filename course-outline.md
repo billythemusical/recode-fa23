@@ -500,7 +500,7 @@ This reading assignment will be the first step for Assignment 9. You can turn an
 
 Submit your idea on [this form](https://docs.google.com/document/d/1OM4y1YyBR7wA_EePLaaXlViISJ3S_o8JrDxfwfd52LY/edit?usp=sharing). You can indicate if you would like to work in a group and find a partner. Please let me know if you intend to work in a group.
 
-## 📌 Assignment 9 📌 - Due before class on Thu Dec 14th:
+### 📌 Assignment 9 📌 - Due before class on Thu Dec 14th:
 
 **Design your own PWA based on your ideas in the reading.**
 
