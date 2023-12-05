@@ -3,6 +3,9 @@ title: working with data
 module: 07-servers
 ---
 
+# Servers 
+## Working with Data
+
 One of the most fundamental functions of a server is working with user data. Here we will mimic an experience I once had while driving through the hills of Virginia, on my way back home to Georgia from NY. There was a call-in radio show where residents of this small town spoke for a few seconds to simply tell their phone number, an item they had to give away for free and a short description, and their phone number again, perhaps repeated once more by the DJ, and then the next resident came on the line. On it went like this for half an hour. And that was the whole show! It was such a heart-warming and simple treat - and the accents! :)
 
 We can create something similiar using Express.js and HTML forms. Below is an example form that we can put into any HTML page. Notice the `action` attribute. Once the form is submitted, this is the route that our server will need to be listening at in order to receive the form data.
