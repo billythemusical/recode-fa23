@@ -15,23 +15,6 @@
     <script>
         let username;
         document.addEventListener('DOMContentLoaded', (event) => {
-            // To remove the username at any time, uncomment below
-            // localStorage.removeItem('username')
-
-            // To check local storage for all items
-            // const items = { ...localStorage }
-            // console.log('items:', items)
-
-            // To delete all usernames
-            // Object.keys(items).forEach((val, i, a) => {
-            //     console.log(val)
-            //     if (val.includes('username')) {
-            //         localStorage.removeItem(val)
-            //     }
-            // })
-            // console.log('items:', items)
-
-
             username = localStorage.getItem('username');
             if (!username) {
                 username = prompt('Please enter your username:');
@@ -108,7 +91,7 @@
 
         socket.on('chat message', (msg) => {
             const item = document.createElement('li');
-            item.textContent = msg.content;
+            item.textContent = `${msg.user}: ${msg.content}`;
             messages.appendChild(item);
             window.scrollTo(0, document.body.scrollHeight);
         });

@@ -485,7 +485,7 @@ Real-time communication
 
 ## Module 9 - Progressive Web Apps 
 
-[CLASS NOTES](modules/09-pwa/PWA.md)
+[CLASS NOTES](modules/09-pwa/PWA.md)  
 [LINK TO CLASS RECORDING](https://nyu.zoom.us/rec/share/vJgysbf-a8lkR4tc2kQbBmqK5SU3Qo63m-OEgjJ_ZDEOgM8-V564d0yZ93lSE9GC.-UlnBJHulx1_dbkx?pwd=sgwETgzgkvLfoviHENSKgnLg-9S3ldxH)
 
 Reference
