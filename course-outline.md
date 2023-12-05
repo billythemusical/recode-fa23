@@ -473,20 +473,25 @@ Read this MIT Tech Review [Article](./modules/07-servers/China-is-escalating-its
 
 Upload the link to your repo to [this Google form](https://forms.gle/qFmdmwFxJA1Jccs16)
 
-
-
 ## Module 8 - Getting Connected with Sockets
 
 Real-time communication
 - chat example from [Socket.io's tutorial](https://socket.io/docs/v4/tutorial/introduction)
-- Starter code is [HERE](https://github.com/billythemusical/recode-fa23/tree/main/modules/08-sockets/socket-starter)
+- Starter code is [HERE](https://github.com/billythemusical/recode-fa23/tree/main/modules/08-sockets/socket-chat-starter)
+- Finished code is [HERE](https://github.com/billythemusical/recode-fa23/tree/main/modules/08-sockets/socket-chat-full)
 - sending mouse pos
     - quiz example
-- sending other data
+- simple interactive world
 
 ## Module 9 - Progressive Web Apps 
 
 [CLASS NOTES](modules/09-pwa/PWA.md)
-[LINK TO CLASS RECORDING]()
+[LINK TO CLASS RECORDING](https://nyu.zoom.us/rec/share/vJgysbf-a8lkR4tc2kQbBmqK5SU3Qo63m-OEgjJ_ZDEOgM8-V564d0yZ93lSE9GC.-UlnBJHulx1_dbkx?pwd=sgwETgzgkvLfoviHENSKgnLg-9S3ldxH)
+
+Reading 9 
+- [Web.dev PWA Overview](https://web.dev/learn/pwa/progressive-web-apps)
+- [Define Your App Icons](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Define_app_icons)
+
+Create app icons for a fictional app of your own design using the instructions on the MDN site. We will be creating our own PWA eventually, so feel free to get a head start now. But this time will not be wasted as you get experience with this process. 
 
 ## Module 10 - Git and Github
