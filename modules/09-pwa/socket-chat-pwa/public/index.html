@@ -2,12 +2,38 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Socket.IO chat</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="A simple chat app using Socket.io!" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+    <base href="./">
 </head>
 
 <body>
+    <script>
+        // register service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('./sw.js')
+                .then(function (reg) {
+                    if (reg.installing) {
+                        console.log('Service worker installing');
+                    } else if (reg.waiting) {
+                        console.log('Service worker installed');
+                    } else if (reg.active) {
+                        console.log('Service worker active');
+                    }
+                })
+                .catch(function (error) {
+                    // registration failed
+                    console.log('Registration failed with ' + error);
+                });
+        }
+    </script>
+
     <!-- user name display -->
     <div id="username-display"></div>
 
