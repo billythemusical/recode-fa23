@@ -64,7 +64,7 @@ When you apply or pop a stash, there's a possibility of conflicts, just like whe
 Dropping a Stash: To remove a specific stash from your stash list, use `git stash drop stash@{n}`, where n is the index of the stash.
 Clearing All Stashes: If you want to remove all stashed entries, use `git stash clear`.
 
-Stashing is a powerful feature in Git, especially when juggling multiple tasks or needing to quickly switch contexts. It's important for students to understand that stashes should be temporary and not used as a long-term versioning strategy.
+Stashing is a powerful feature in Git, especially when juggling multiple tasks or needing to quickly switch contexts. It's important to understand that stashes should be temporary and not used as a long-term versioning strategy.
 
 ## .gitignore
 
