@@ -524,6 +524,8 @@ Upload your code to a new public repo on Github called "09-pwa" and share this l
 
 ## Module 10 - Git and Github
 
+[CLASS NOTES](modules/10-git/git.md)
+
 Basic Git commands
 - git init
 - git add
