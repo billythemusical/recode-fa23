@@ -18,7 +18,7 @@ Fall 2023
 [Module 6](#module-6---developing-locally) - Developing Locally  
 [Module 7](#module-7---simple-web-servers) - Servers  
 [Module 8](#module-8---getting-connected-with-sockets) - Getting Connected with Sockets  
-[Module 9](#module-9---using-git-and-github) - Progressive Web Apps 
+[Module 9](#module-9---using-git-and-github) - Progressive Web Apps  
 [Module 10](#module-10---git-and-github) - Git and Github  
 
 
