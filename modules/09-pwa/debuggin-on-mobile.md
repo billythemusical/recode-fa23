@@ -5,8 +5,9 @@ module: 09-pwa
 
 # Debugging Web Pages on Mobile Devices
 
-[Part 1: Debugging on Safari (iOS)](#part-1-debugging-on-safari-ios)  
-[Part 2: Debugging on Android](#part-2-debugging-on-chrome-android)
+[Part 1: Connecting to a local web page on mobile](#part-1-connecting-to-a-local-web-page-on-mobile)
+[Part 2a: Debugging on Safari (iOS)](#part-2a-debugging-on-safari-ios)  
+[Part 2b: Debugging on Android](#part-2b-debugging-on-chrome-android)
 
 >You will need a USB cable to attach your mobile device to your desktop or laptop.
 
@@ -14,7 +15,7 @@ module: 09-pwa
 
 Debugging on mobile devices can be difficult because the small screen size and lack of traditional keyboard, among other things. So we usually tether our devices to a laptop or desktop via USB and watch the console there. Here's how to set that up on both iOS and Android. I have tested this on iOS, but not on Android though, so please let me know ASAP if this is working or not for the latter.
 
-### Part 1: Connecting to a locally developed web page
+### Part 1: Connecting to a local web page on mobile
 
 Before you deploy your site, you'll need to visit it on your mobile device as you're building it. To do so, you have to do a few things:
 
