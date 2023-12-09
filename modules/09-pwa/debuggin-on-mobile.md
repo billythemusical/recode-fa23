@@ -5,7 +5,7 @@ module: 09-pwa
 
 # Debugging Web Pages on Mobile Devices
 
-[Part 1: Connecting to a local web page on mobile](#part-1-connecting-to-a-local-web-page-on-mobile)
+[Part 1: Connecting to a local web page on mobile](#part-1-connecting-to-a-local-web-page-on-mobile)  
 [Part 2a: Debugging on Safari (iOS)](#part-2a-debugging-on-safari-ios)  
 [Part 2b: Debugging on Android](#part-2b-debugging-on-chrome-android)
 
