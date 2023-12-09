@@ -21,7 +21,7 @@ Before you deploy your site, you'll need to visit it on your mobile device as yo
 1. Make sure your mobile device and computer are on the same wifi network. 
 2. Find the IP address of your computer (in MacOS, it's in System Preferences > Network)
 3. Launch Live Server in VS Code or run nodemon in the folder you want to serve.
-4. Visit the IP address of your computer in your mobile device's web browser, typically http://192.168.1.XXX and the port. You'll also likely be working on a locally-hosted version of your project, so you'll need to track down your local IP address and visit that on your mobile device's browser for development. Typically that's `http://192.168.1.XXX:<port>` where `<port>along with the port.
+4. Visit the IP address of your computer in your mobile device's web browser, typically `http://192.168.1.XXX:<port>` where `<port>` is the port number your site is being served on.
 
 Here's a demo [video](https://urldefense.proofpoint.com/v2/url?u=https-3A__nyu.zoom.us_rec_share_Avkvx4bvoqbDsULNUo9rknc7Ne06YM-5FHdtnuWZi8EJALTA0aZ2-2DXkjVXx949Vd5b.aaXYqLEXa6CTpDey-3Fpwd-3DnqOyLWTQKPo0LZHWaFjfHk8EhpJ-2DA3NK&d=DwMFAw&c=slrrB7dE8n7gBJbeO0g-IQ&r=wTFzgo36J-q7d-kMhnr2bg&m=37JwvsPN_g0SiYCZFqtfVCWgvvZBSkkozYEZgpp0bKIwYL6mGn9wBr4lPe9RS8LQ&s=kjmiyb7mepqW3oPObL72nQ_TCu5T4s5j91yfV4Jk_XA&e=) of the setup process in action.
 
